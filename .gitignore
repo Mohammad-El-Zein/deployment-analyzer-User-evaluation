@@ -10,4 +10,4 @@ full_program_raw_results.json
 all_results.csv
 all_raw_results.json
 boxplot_*.png
-run_evaluation.bat
+summary_results.csv

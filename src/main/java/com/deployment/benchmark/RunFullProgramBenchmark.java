@@ -7,29 +7,29 @@ import org.openjdk.jmh.runner.options.OptionsBuilder;
 import org.openjdk.jmh.results.format.ResultFormatType;
 
 /**
- * Fuehrt ALLE Benchmarks (Algorithm + FullProgram)
- * in EINEM Durchlauf aus und exportiert NUR JSON
- * (enthaelt alle Einzelmessungen/rawData).
+ * Fuehrt NUR den FullProgramBenchmark aus
+ * (Gesamtlaufzeit: YAML lesen + Graph bauen +
+ * Sortieren + Level-BFS, einmal mit Kahn,
+ * einmal mit DFS).
  *
  * Ausfuehren mit:
  *   java -cp target/benchmarks.jar
- *        com.deployment.benchmark.RunAllBenchmarks
+ *        com.deployment.benchmark.RunFullProgramBenchmark
  */
-public class RunAllBenchmarks {
+public class RunFullProgramBenchmark {
 
     public static void main(String[] args) throws RunnerException {
 
-        System.out.println("=== Fuehre alle Benchmarks aus (JSON Export) ===");
-        Options jsonOptions = new OptionsBuilder()
-            .include(AlgorithmBenchmark.class.getSimpleName())
+        System.out.println("=== Gesamtprogramm: Kahn-Version vs DFS-Version ===");
+        Options options = new OptionsBuilder()
             .include(FullProgramBenchmark.class.getSimpleName())
             .resultFormat(ResultFormatType.JSON)
             .result("all_raw_results.json")
             .build();
-        new Runner(jsonOptions).run();
+        new Runner(options).run();
 
         System.out.println();
-        System.out.println("Benchmarks abgeschlossen!");
+        System.out.println("Benchmark abgeschlossen!");
         System.out.println("Ergebnis: all_raw_results.json");
     }
 }

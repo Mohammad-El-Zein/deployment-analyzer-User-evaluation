@@ -7,37 +7,43 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Liest die JMH-Ergebnis-CSV (algorithm_results.csv)
- * und sucht die Werte fuer ein bestimmtes Label
- * (z.B. "large") und einen Algorithmus (Kahn/DFS).
+ * Liest die vereinfachte Zusammenfassungs-CSV
+ * (summary_results.csv, erzeugt von create_summary.py
+ * aus den JMH Rohdaten) und sucht die Werte fuer
+ * ein bestimmtes Label und Kategorie.
+ *
+ * Format der CSV:
+ * category,graphSize,kahn,dfs,unit,faster
  */
 public class CsvResultReader {
 
     public static class JmhResult {
-        public final double score;
-        public final double error;
+        public final double kahnScore;
+        public final double dfsScore;
         public final String unit;
+        public final String faster;
 
-        public JmhResult(double score, double error,
-                          String unit) {
-            this.score = score;
-            this.error = error;
+        public JmhResult(double kahnScore, double dfsScore,
+                          String unit, String faster) {
+            this.kahnScore = kahnScore;
+            this.dfsScore = dfsScore;
             this.unit = unit;
+            this.faster = faster;
         }
     }
 
     /**
-     * Sucht in der CSV nach dem Eintrag fuer
-     * das gegebene Label und den Algorithmus-Namen
-     * (z.B. "kahnAlgorithm" oder "dfsAlgorithm").
+     * Sucht den Eintrag fuer eine bestimmte Kategorie
+     * ("algorithm" oder "fullprogram") und ein Label
+     * (z.B. "large").
      *
      * Gibt null zurueck wenn kein Eintrag existiert
      * oder die Datei nicht gefunden wird.
      */
     public static JmhResult findResult(
             String csvFilePath,
-            String label,
-            String benchmarkMethodName) {
+            String category,
+            String label) {
 
         try (BufferedReader reader =
                 new BufferedReader(
@@ -53,30 +59,24 @@ public class CsvResultReader {
                     continue;
                 }
 
-                if (line.trim().startsWith("#")
-                        || line.trim().isEmpty()) {
-                    continue;
-                }
+                if (line.trim().isEmpty()) continue;
 
                 String[] parts = splitCsvLine(line);
-                if (parts.length < 8) continue;
+                if (parts.length < 6) continue;
 
-                String benchmarkName = parts[0];
-                String score = parts[4];
-                String error = parts[5];
-                String unit = parts[6];
-                String graphSize = parts[7];
+                String rowCategory = parts[0];
+                String rowGraphSize = parts[1];
 
-                if (benchmarkName.contains(benchmarkMethodName)
-                        && graphSize.equals(label)) {
+                if (rowCategory.equals(category)
+                        && rowGraphSize.equals(label)) {
 
-                    double scoreVal = Double.parseDouble(
-                        score.replace(",", "."));
-                    double errorVal = Double.parseDouble(
-                        error.replace(",", "."));
+                    double kahnScore = Double.parseDouble(parts[2]);
+                    double dfsScore = Double.parseDouble(parts[3]);
+                    String unit = parts[4];
+                    String faster = parts[5];
 
                     return new JmhResult(
-                        scoreVal, errorVal, unit);
+                        kahnScore, dfsScore, unit, faster);
                 }
             }
 
@@ -87,11 +87,6 @@ public class CsvResultReader {
         return null;
     }
 
-    /**
-     * Korrekter CSV-Parser der Felder in
-     * Anfuehrungszeichen als EINEN Wert behandelt,
-     * auch wenn darin ein Komma steht.
-     */
     private static String[] splitCsvLine(String line) {
         List<String> result = new ArrayList<>();
         StringBuilder current = new StringBuilder();

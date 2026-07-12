@@ -111,7 +111,7 @@ public class ResultPrinter {
             System.out.println();
     }
 
-    public void printComparison(
+        public void printComparison(
         KahnAlgorithm kahn,
         DFSTopologicalSort dfs,
         Graph graph,
@@ -131,27 +131,22 @@ public class ResultPrinter {
         String label = com.deployment.benchmark
             .GraphSizeConfig.getLabelForFile(currentFilePath);
 
-        String csvPath = "algorithm_results.csv";
+        String summaryPath = "summary_results.csv";
 
         com.deployment.benchmark.CsvResultReader.JmhResult
-            kahnJmh = null;
-        com.deployment.benchmark.CsvResultReader.JmhResult
-            dfsJmh = null;
+            result = null;
 
         if (label != null) {
-            kahnJmh = com.deployment.benchmark
+            result = com.deployment.benchmark
                 .CsvResultReader.findResult(
-                    csvPath, label, "kahnAlgorithm");
-            dfsJmh = com.deployment.benchmark
-                .CsvResultReader.findResult(
-                    csvPath, label, "dfsAlgorithm");
+                    summaryPath, "algorithm", label);
         }
 
-        if (kahnJmh != null && dfsJmh != null) {
+        if (result != null) {
 
             System.out.println(
-                " [JMH] Wissenschaftlich praezise Werte in Mikrosekunden "
-                + "(aus " + csvPath + "):");
+                " [JMH] Wissenschaftlich praezise Werte "
+                + "(aus " + summaryPath + "):");
             System.out.println(THIN_LINE + "-------------------------");
             System.out.printf(
                 " %-15s %-25s %-25s%n",
@@ -161,16 +156,12 @@ public class ResultPrinter {
                 " %-15s %-25s %-25s%n",
                 "Laufzeit",
                 String.format(java.util.Locale.US,
-                    "%.3f +/- %.3f %s",
-                    kahnJmh.score, kahnJmh.error, kahnJmh.unit),
+                    "%.3f %s", result.kahnScore, result.unit),
                 String.format(java.util.Locale.US,
-                    "%.3f +/- %.3f %s",
-                    dfsJmh.score, dfsJmh.error, dfsJmh.unit));
+                    "%.3f %s", result.dfsScore, result.unit));
 
-            String faster = kahnJmh.score < dfsJmh.score
-                ? "Kahn" : "DFS";
             System.out.println(THIN_LINE + "-------------------------");
-            System.out.println(" Schneller (JMH): " + faster);
+            System.out.println(" Schneller (JMH): " + result.faster);
             System.out.println(THIN_LINE + "-------------------------");
 
         } else {
@@ -207,86 +198,74 @@ public class ResultPrinter {
             System.out.println(
                 " zu GraphSizeConfig.java hinzu und fuehre");
             System.out.println(
-                " den Benchmark einmal aus!");
+                " run_evaluation aus!");
             System.out.println(THIN_LINE);
         }
 
         System.out.println();
     }
 
-    /**
-     * Zeigt den Gesamtprogramm-Laufzeitvergleich
-     * (Kahn-Version vs DFS-Version) basierend auf
-     * den JMH FullProgramBenchmark Ergebnissen.
-    */
-    public void printFullProgramComparison(String currentFilePath) {
+        public void printFullProgramComparison(String currentFilePath) {
 
-        System.out.println();
-        System.out.println(LINE);
-        System.out.println("#   GESAMTPROGRAMM: KAHN vs DFS        #");
-        System.out.println(LINE);
-        System.out.println();
+            System.out.println();
+            System.out.println(LINE);
+            System.out.println("#   GESAMTPROGRAMM: KAHN vs DFS        #");
+            System.out.println(LINE);
+            System.out.println();
 
-        String label = com.deployment.benchmark
-            .GraphSizeConfig.getLabelForFile(currentFilePath);
+            String label = com.deployment.benchmark
+                .GraphSizeConfig.getLabelForFile(currentFilePath);
 
-        String csvPath = "full_program_results.csv";
+            String summaryPath = "summary_results.csv";
 
-        com.deployment.benchmark.CsvResultReader.JmhResult
-            kahnJmh = null;
-        com.deployment.benchmark.CsvResultReader.JmhResult
-            dfsJmh = null;
+            com.deployment.benchmark.CsvResultReader.JmhResult
+                result = null;
 
-        if (label != null) {
-            kahnJmh = com.deployment.benchmark
-                .CsvResultReader.findResult(
-                    csvPath, label, "fullProgramWithKahn");
-            dfsJmh = com.deployment.benchmark
-                .CsvResultReader.findResult(
-                    csvPath, label, "fullProgramWithDFS");
-        }
+            if (label != null) {
+                result = com.deployment.benchmark
+                    .CsvResultReader.findResult(
+                        summaryPath, "fullprogram", label);
+            }
 
-        if (kahnJmh != null && dfsJmh != null) {
+            if (result != null) {
 
-            System.out.println(
-                " [JMH] Gesamtlaufzeit in Millisekunden "
-                + "(aus " + csvPath + "):");
-            System.out.println(
-                "(YAML lesen + Graph aufbauen + Sortieren + Level-BFS):");
-            System.out.println(THIN_LINE + "-------------------------");
-            System.out.printf(
-                " %-15s %-25s %-25s%n",
-                "", "mit Kahn", "mit DFS");
-            System.out.println(THIN_LINE + "-------------------------");
-            System.out.printf(
-                " %-15s %-25s %-25s%n",
-                "Laufzeit",
-                String.format(java.util.Locale.US,
-                    "%.3f +/- %.3f %s",
-                    kahnJmh.score, kahnJmh.error, kahnJmh.unit),
-                String.format(java.util.Locale.US,
-                    "%.3f +/- %.3f %s",
-                    dfsJmh.score, dfsJmh.error, dfsJmh.unit));
+                System.out.println(
+                    " [JMH] Gesamtlaufzeit "
+                    + "(aus " + summaryPath + "):");
+                System.out.println(
+                    "(YAML lesen + Graph aufbauen + Sortieren + Level-BFS):");
+                System.out.println(THIN_LINE + "-------------------------");
+                System.out.printf(
+                    " %-15s %-25s %-25s%n",
+                    "", "mit Kahn", "mit DFS");
+                System.out.println(THIN_LINE + "-------------------------");
+                System.out.printf(
+                    " %-15s %-25s %-25s%n",
+                    "Laufzeit",
+                    String.format(java.util.Locale.US,
+                        "%.3f %s", result.kahnScore, result.unit),
+                    String.format(java.util.Locale.US,
+                        "%.3f %s", result.dfsScore, result.unit));
 
-            String faster = kahnJmh.score < dfsJmh.score
-                ? "Kahn-Version" : "DFS-Version";
-            System.out.println(THIN_LINE + "-------------------------");
-            System.out.println(
-                " Schneller (Gesamtprogramm): " + faster);
-            System.out.println(THIN_LINE + "-------------------------");
+                String fasterVersion = result.faster.equals("Kahn")
+                    ? "Kahn-Version" : "DFS-Version";
+                System.out.println(THIN_LINE + "-------------------------");
+                System.out.println(
+                    " Schneller (Gesamtprogramm): " + fasterVersion);
+                System.out.println(THIN_LINE + "-------------------------");
 
-        } else {
-            System.out.println(
-                " [Hinweis] Keine JMH-Gesamtprogramm-Daten");
-            System.out.println(
-                " fuer diese Datei gefunden.");
-            System.out.println(
-                " Fuege diese Datei zu GraphSizeConfig.java");
-            System.out.println(
-                " hinzu und fuehre FullProgramBenchmark aus!");
-        }
+            } else {
+                System.out.println(
+                    " [Hinweis] Keine JMH-Gesamtprogramm-Daten");
+                System.out.println(
+                    " fuer diese Datei gefunden.");
+                System.out.println(
+                    " Fuege diese Datei zu GraphSizeConfig.java");
+                System.out.println(
+                    " hinzu und fuehre run_evaluation aus!");
+            }
 
-        System.out.println();
+            System.out.println();
     }
     /**
      * Tarjan Ergebnis ausgeben

@@ -17,6 +17,9 @@ def load_jmh_json(filepath):
 
 
 def extract_raw_data(jmh_data, algorithm_name):
+    """Extrahiert Rohdaten fuer einen bestimmten
+    Benchmark-Methodennamen (z.B. 'kahnAlgorithm' 
+    oder 'fullProgramWithKahn')"""
     result = {}
     for entry in jmh_data:
         if algorithm_name not in entry['benchmark']:
@@ -158,49 +161,54 @@ def main():
     size_order = ['simple', 'medium', 'large', 'xlarge', 
                   'xxlarge', 'xxxlarge', 'xxxxlarge']
     
-    try:
-        algo_json = load_jmh_json('algorithm_raw_results.json')
-        
-        kahn_data = extract_raw_data(algo_json, 'kahnAlgorithm')
-        dfs_data = extract_raw_data(algo_json, 'dfsAlgorithm')
-        
-        print("Erstelle Boxplot fuer isolierte Algorithmen...")
-        
-        create_boxplot(
-            kahn_data, dfs_data, size_order,
-            "Laufzeitvergleich: Kahn vs. DFS (isoliert)",
-            "boxplot_algorithm.png",
-            "Laufzeit (us)"
-        )
-        
-        create_boxplot_log_scale(
-            kahn_data, dfs_data, size_order,
-            "Laufzeitvergleich: Kahn vs. DFS (isoliert, log-Skala)",
-            "boxplot_algorithm_log.png",
-            "Laufzeit (us)"
-        )
-        
-    except FileNotFoundError:
-        print("algorithm_raw_results.json nicht gefunden!")
+    # EINE kombinierte JSON Datei mit BEIDEN Benchmark-Typen
+    json_file = 'all_raw_results.json'
     
     try:
-        full_json = load_jmh_json('full_program_raw_results.json')
+        all_json = load_jmh_json(json_file)
         
-        kahn_full = extract_raw_data(full_json, 'fullProgramWithKahn')
-        dfs_full = extract_raw_data(full_json, 'fullProgramWithDFS')
+        # --- Isolierte Algorithmen ---
+        kahn_data = extract_raw_data(all_json, 'kahnAlgorithm')
+        dfs_data = extract_raw_data(all_json, 'dfsAlgorithm')
         
-        print("Erstelle Boxplot fuer Gesamtprogramm...")
+        if kahn_data and dfs_data:
+            print("Erstelle Boxplot fuer isolierte Algorithmen...")
+            
+            create_boxplot(
+                kahn_data, dfs_data, size_order,
+                "Laufzeitvergleich: Kahn vs. DFS (isoliert)",
+                "boxplot_algorithm.png",
+                "Laufzeit (us)"
+            )
+            
+            create_boxplot_log_scale(
+                kahn_data, dfs_data, size_order,
+                "Laufzeitvergleich: Kahn vs. DFS (isoliert, log-Skala)",
+                "boxplot_algorithm_log.png",
+                "Laufzeit (us)"
+            )
+        else:
+            print("Keine Daten fuer isolierte Algorithmen gefunden.")
         
-        create_boxplot_log_scale(
-            kahn_full, dfs_full, size_order,
-            "Laufzeitvergleich: Gesamtprogramm (Kahn vs. DFS Version)",
-            "boxplot_full_program_log.png",
-            "Laufzeit (ms)"
-        )
+        # --- Gesamtprogramm ---
+        kahn_full = extract_raw_data(all_json, 'fullProgramWithKahn')
+        dfs_full = extract_raw_data(all_json, 'fullProgramWithDFS')
+        
+        if kahn_full and dfs_full:
+            print("Erstelle Boxplot fuer Gesamtprogramm...")
+            
+            create_boxplot_log_scale(
+                kahn_full, dfs_full, size_order,
+                "Laufzeitvergleich: Gesamtprogramm (Kahn vs. DFS Version)",
+                "boxplot_full_program_log.png",
+                "Laufzeit (ms)"
+            )
+        else:
+            print("Keine Daten fuer Gesamtprogramm gefunden.")
         
     except FileNotFoundError:
-        print("full_program_raw_results.json nicht gefunden!")
-        print("(Das ist ok, falls du diese Datei noch nicht erzeugt hast)")
+        print(f"{json_file} nicht gefunden!")
+        print("Fuehre zuerst RunAllBenchmarks aus.")
 
 
 if __name__ == "__main__":
