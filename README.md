@@ -29,7 +29,8 @@ Dieses Tool analysiert Microservice-Abhängigkeiten automatisch und berechnet di
 
 ### Motivation
 
-In modernen Cloud-Umgebungen bestehen Anwendungen aus vielen unabhängigen Microservices die voneinander abhängen. In der Praxis – z.B. beim Deployment von ~80 Microservices auf Azure Kubernetes Service (AKS) – treten Fehler wie `CrashLoopBackOff` auf, ohne dass klar ist ob ein zyklisches Abhängigkeitsproblem vorliegt. Bei 1000+ Services ist eine manuelle Analyse nicht mehr praktikabel.
+Das Deployment von Microservices in modernen Cloud-Umgebungen ist fehleranfällig:Zyklische Abhängigkeiten blockieren Systeme, falsche Startreihenfolgen verursachen CrashLoopBackOff und hohe Cloud-Kosten, und bei 1000+ Services ist manuelle  Analyse nicht mehr praktikabel.
+Diese Arbeit löst dieses Problem durch einen graphbasierten Ansatz mit fünf Algorithmen – von der Reihenfolgeberechnung bis zur automatischen Zyklusauflösung.
 
 ### Was aktuelle Tools leisten – und wo sie scheitern
 
