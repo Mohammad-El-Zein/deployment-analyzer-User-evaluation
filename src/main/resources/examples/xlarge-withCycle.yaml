@@ -384,6 +384,16 @@ services:
   cycle-service-b:
     depends_on:
       - cycle-service-c
+
   cycle-service-c:
     depends_on:
+      - cycle-service-x
+  cycle-service-x:
+    depends_on:
       - cycle-service-a
+      - cycle-service-d
+
+  cycle-service-d:
+    depends_on:
+      - cycle-service-c
+  

@@ -14,13 +14,38 @@ public class FeedbackArcSet {
     private List<String> edgesToRemove;
     private long executionTime;
 
+    // Zyklen die NICHT aufgeloest werden konnten
+    // weil alle beteiligten Kanten geschuetzt sind
+    private List<List<String>> unresolvableCycles;
+
     public FeedbackArcSet() {
         edgesToRemove = new ArrayList<>();
         executionTime = 0;
+        unresolvableCycles = new ArrayList<>();
     }
 
+    /**
+     * Fuehrt Feedback Arc Set OHNE geschuetzte Kanten aus.
+     * (Abwaertskompatibel zur alten Nutzung)
+     */
     public void execute(Graph graph,
                         List<List<String>> cycles) {
+        execute(graph, cycles, new HashSet<>());
+    }
+
+    /**
+     * Fuehrt Feedback Arc Set aus. Kanten in
+     * protectedEdges (Format "from -> to") werden
+     * NIEMALS als Loesungsvorschlag entfernt.
+     *
+     * Falls ein Zyklus ausschliesslich aus
+     * geschuetzten Kanten besteht, kann er nicht
+     * aufgeloest werden - das wird in
+     * unresolvableCycles vermerkt.
+     */
+    public void execute(Graph graph,
+                        List<List<String>> cycles,
+                        Set<String> protectedEdges) {
 
         long startTime = System.nanoTime();
 
@@ -47,6 +72,13 @@ public class FeedbackArcSet {
                         new ArrayList<>(),
                         edgeCount);
                 }
+            }
+
+            // Geschuetzte Kanten aus den Kandidaten
+            // entfernen - sie duerfen nicht
+            // vorgeschlagen werden!
+            for (String protectedEdge : protectedEdges) {
+                edgeCount.remove(protectedEdge);
             }
 
             String bestEdge = null;
@@ -88,6 +120,10 @@ public class FeedbackArcSet {
                 });
 
             } else {
+                // Keine loeschbare Kante mehr gefunden!
+                // Alle verbleibenden Zyklen bestehen
+                // nur noch aus geschuetzten Kanten.
+                unresolvableCycles.addAll(remainingCycles);
                 break;
             }
         }
@@ -167,20 +203,47 @@ public class FeedbackArcSet {
         return executionTime;
     }
 
+    public boolean hasUnresolvableCycles() {
+        return !unresolvableCycles.isEmpty();
+    }
+
+    public List<List<String>> getUnresolvableCycles() {
+        return unresolvableCycles;
+    }
+
     public void printResult() {
-        if (edgesToRemove.isEmpty()) {
+        if (edgesToRemove.isEmpty()
+                && unresolvableCycles.isEmpty()) {
             System.out.println(
                 " Keine Kanten zu entfernen!");
         } else {
-            System.out.println(
-                " Feedback Arc Set Loesung:");
-            System.out.println(
-                " Entferne folgende Abhaengigkeiten:");
-            for (String edge : edgesToRemove) {
-                System.out.println("   - " + edge);
+
+            if (!edgesToRemove.isEmpty()) {
+                System.out.println(
+                    " Feedback Arc Set Loesung:");
+                System.out.println(
+                    " Entferne folgende Abhaengigkeiten:");
+                for (String edge : edgesToRemove) {
+                    System.out.println("   - " + edge);
+                }
             }
-            System.out.println(
-                " Nach Entfernung: Kein Zyklus mehr!");
+
+            if (unresolvableCycles.isEmpty()) {
+                System.out.println(
+                    " Nach Entfernung: Kein Zyklus mehr!");
+            } else {
+                System.out.println();
+                System.out.println(
+                    " [WARNUNG] Folgende Zyklen konnten NICHT");
+                System.out.println(
+                    " aufgeloest werden, da alle beteiligten");
+                System.out.println(
+                    " Kanten als geschuetzt markiert sind:");
+                for (List<String> cycle : unresolvableCycles) {
+                    System.out.println("   - " + cycle);
+                }
+            }
+
             System.out.println(
                 " Laufzeit: " + executionTime + " ns");
         }

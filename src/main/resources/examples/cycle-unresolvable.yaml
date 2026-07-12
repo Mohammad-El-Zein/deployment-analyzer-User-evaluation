@@ -1,0 +1,14 @@
+version: "3"
+services:
+  auth-service:
+    depends_on:
+      - user-service
+    protected_dependencies:
+      - user-service
+  user-service:
+    depends_on:
+      - auth-service
+    protected_dependencies:
+      - auth-service
+  database:
+    depends_on: []

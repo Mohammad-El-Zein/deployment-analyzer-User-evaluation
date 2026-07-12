@@ -96,6 +96,30 @@ public class DFSTopologicalSort {
         stack.push(node);
     }
 
+        /**
+     * Reine Ausführung für Benchmarking (JMH)
+     * OHNE Memory-Messung und OHNE runtime.gc()
+     */
+    public void executeForBenchmark(Graph graph) {
+
+        for (String node : graph.getNodes()) {
+            color.put(node, WHITE);
+        }
+
+        for (String node : graph.getNodes()) {
+            if (color.get(node) == WHITE) {
+                dfsVisit(node, graph);
+            }
+            if (hasCycle) break;
+        }
+
+        if (!hasCycle) {
+            while (!stack.isEmpty()) {
+                deploymentOrder.add(stack.pop());
+            }
+        }
+    }
+
     // Getter
     public List<String> getDeploymentOrder() {
         return deploymentOrder;

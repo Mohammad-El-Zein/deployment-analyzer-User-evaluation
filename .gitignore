@@ -1,3 +1,13 @@
-target/ 
-.vscode/ 
-*.class 
+target/
+dependency-reduced-pom.xml
+*.dot
+dependency_graph.svg
+deployment_result.json
+algorithm_results.csv
+algorithm_raw_results.json
+full_program_results.csv
+full_program_raw_results.json
+all_results.csv
+all_raw_results.json
+boxplot_*.png
+run_evaluation.bat

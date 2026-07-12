@@ -159,7 +159,11 @@ public class GraphGenerator {
 
         generate(50,   "large.yaml");
         generate(100,  "xlarge.yaml");
-        generate(1000, "xxlarge.yaml");
+        generate(500,  "xxlarge.yaml");
+        generate(1000, "xxxlarge.yaml");
+        generate(2000, "xxxxlarge.yaml");
+
+
 
         System.out.println(
             "\nAlle Dateien erstellt!");

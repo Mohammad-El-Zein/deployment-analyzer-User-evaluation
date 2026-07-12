@@ -1,5 +1,11 @@
 # Deployment Analyzer
 
+mvn clean package
+java -jar target/benchmarks.jar FullProgramBenchmark -rf csv -rff full_program_results.csv
+java -jar target/benchmarks.jar AlgorithmBenchmark -rf csv -rff algorithm_results.csv
+py create_summary.py
+
+
 <p align="center">
   <img src="https://img.shields.io/badge/TU-Dortmund-4CAF50?style=for-the-badge" alt="Algorithm Engineering"/>
   <img src="https://img.shields.io/badge/Algorithm-Engineering-003DA5?style=for-the-badge" alt="TU Dortmund"/>

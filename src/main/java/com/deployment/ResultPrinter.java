@@ -1,6 +1,7 @@
 package com.deployment;
 
 import java.util.List;
+import java.util.Locale;
 
 import com.deployment.algorithm.DFSTopologicalSort;
 import com.deployment.algorithm.FeedbackArcSet;
@@ -24,26 +25,22 @@ public class ResultPrinter {
     /**
      * Graph Übersicht ausgeben
      */
-    public void printGraph(Graph graph) {
-        System.out.println();
-        System.out.println();
-        System.out.println(LINE);
-        System.out.println("#          GRAPH UEBERSICHT           #");
-        System.out.println(LINE);
-        System.out.println(
-            " Services: " + graph.getNodeCount());
-        System.out.println(THIN_LINE + "---------------");
-
-        for (String node : graph.getNodes()) {
-            System.out.printf(
-                " %-13s -> %-20s (In-Degree: %d)%n",
-                node,
-                graph.getNeighbors(node).toString(),
-                graph.getInDegreeOf(node));
+        public void printGraph(Graph graph) {
+            System.out.println();
+            System.out.println();
+            System.out.println(LINE);
+            System.out.println("#          GRAPH UEBERSICHT           #");
+            System.out.println(LINE);
+            System.out.println(
+                " Services: " + graph.getNodeCount());
+            System.out.println();
+            System.out.println(
+                " Siehe dependency_graph.svg fuer die visuelle Darstellung");
+            System.out.println(
+                " Siehe deployment_result.json fuer das maschinenlesbare Ergebnis");
+            System.out.println(THIN_LINE + "---------------");
+            System.out.println();
         }
-        System.out.println(THIN_LINE + "---------------");
-        System.out.println();
-    } 
 
     /**
      * Kahn Ergebnis ausgeben
@@ -72,9 +69,7 @@ public class ResultPrinter {
                     "   " + (i + 1) + ". " + order.get(i));
             }
         }
-         System.out.println(THIN_LINE);
-    System.out.println(
-        " Laufzeit : " + kahn.getTimeFormatted());
+    System.out.println(THIN_LINE);
     System.out.println(
         " Speicher : " + kahn.getMemoryFormatted());
     System.out.println(THIN_LINE);
@@ -111,20 +106,16 @@ public class ResultPrinter {
             System.out.println();
             System.out.println(THIN_LINE);
             System.out.println(
-                " Laufzeit : " + dfs.getTimeFormatted());
-            System.out.println(
                 " Speicher : " + dfs.getMemoryFormatted());
             System.out.println(THIN_LINE);
             System.out.println();
     }
 
-    /**
-     * Vergleich Kahn vs DFS
-     */
     public void printComparison(
         KahnAlgorithm kahn,
         DFSTopologicalSort dfs,
-        Graph graph) {
+        Graph graph,
+        String currentFilePath) {
 
         System.out.println();
         System.out.println(LINE);
@@ -132,50 +123,171 @@ public class ResultPrinter {
         System.out.println(LINE);
         System.out.println();
         System.out.println(
-            " Graph-Groesse: " 
-            + graph.getNodeCount() 
+            " Graph-Groesse: "
+            + graph.getNodeCount()
             + " Services");
         System.out.println();
-        System.out.printf(
-            " %-15s %-20s %-20s%n",
-            "", "Kahn", "DFS");
-        System.out.println(THIN_LINE + "-------------------");
-        System.out.printf(
-            " %-15s %-20s %-20s%n",
-            "Laufzeit",
-            kahn.getExecutionTime() + " ns",
-            dfs.getExecutionTime() + " ns");
-        System.out.printf(
-            " %-15s %-20s %-20s%n",
-            "in ms",
-            String.format("%.3f ms",
-                kahn.getExecutionTime() / 1_000_000.0),
-            String.format("%.3f ms",
-                dfs.getExecutionTime() / 1_000_000.0));
-        System.out.printf(
-            " %-15s %-20s %-20s%n",
-            "Speicher",
-            kahn.getMemoryFormatted(),
-            dfs.getMemoryFormatted());
-        System.out.printf(
-            " %-15s %-20s %-20s%n",
-            "Zyklus",
-            kahn.hasCycle() ? "Ja" : "Nein",
-            dfs.hasCycle() ? "Ja" : "Nein");
 
-        String faster = kahn.getExecutionTime()
-            < dfs.getExecutionTime() ? "Kahn" : "DFS";
-        String lessMemory = kahn.getMemoryUsed()
-            < dfs.getMemoryUsed() ? "Kahn" : "DFS";
+        String label = com.deployment.benchmark
+            .GraphSizeConfig.getLabelForFile(currentFilePath);
 
-        System.out.println();
-        System.out.println(THIN_LINE);
-        System.out.println(" Schneller        : " + faster);
-        System.out.println(" Weniger Speicher : " + lessMemory);
-        System.out.println(THIN_LINE);
+        String csvPath = "algorithm_results.csv";
+
+        com.deployment.benchmark.CsvResultReader.JmhResult
+            kahnJmh = null;
+        com.deployment.benchmark.CsvResultReader.JmhResult
+            dfsJmh = null;
+
+        if (label != null) {
+            kahnJmh = com.deployment.benchmark
+                .CsvResultReader.findResult(
+                    csvPath, label, "kahnAlgorithm");
+            dfsJmh = com.deployment.benchmark
+                .CsvResultReader.findResult(
+                    csvPath, label, "dfsAlgorithm");
+        }
+
+        if (kahnJmh != null && dfsJmh != null) {
+
+            System.out.println(
+                " [JMH] Wissenschaftlich praezise Werte in Mikrosekunden "
+                + "(aus " + csvPath + "):");
+            System.out.println(THIN_LINE + "-------------------------");
+            System.out.printf(
+                " %-15s %-25s %-25s%n",
+                "", "Kahn", "DFS");
+            System.out.println(THIN_LINE + "-------------------------");
+            System.out.printf(
+                " %-15s %-25s %-25s%n",
+                "Laufzeit",
+                String.format(java.util.Locale.US,
+                    "%.3f +/- %.3f %s",
+                    kahnJmh.score, kahnJmh.error, kahnJmh.unit),
+                String.format(java.util.Locale.US,
+                    "%.3f +/- %.3f %s",
+                    dfsJmh.score, dfsJmh.error, dfsJmh.unit));
+
+            String faster = kahnJmh.score < dfsJmh.score
+                ? "Kahn" : "DFS";
+            System.out.println(THIN_LINE + "-------------------------");
+            System.out.println(" Schneller (JMH): " + faster);
+            System.out.println(THIN_LINE + "-------------------------");
+
+        } else {
+
+            System.out.println(
+                " [Hinweis] Keine JMH-Benchmark-Daten fuer");
+            System.out.println(
+                " diese Datei gefunden. Zeige einfache");
+            System.out.println(
+                " Messung (nicht wissenschaftlich praezise):");
+            System.out.println(THIN_LINE);
+            System.out.printf(
+                " %-15s %-20s %-20s%n",
+                "", "Kahn", "DFS");
+            System.out.println(THIN_LINE + "-------------------------");
+            System.out.printf(
+                " %-15s %-20s %-20s%n",
+                "Laufzeit",
+                kahn.getExecutionTime() + " ns",
+                dfs.getExecutionTime() + " ns");
+            System.out.printf(
+                " %-15s %-20s %-20s%n",
+                "Speicher",
+                kahn.getMemoryFormatted(),
+                dfs.getMemoryFormatted());
+
+            String faster = kahn.getExecutionTime()
+                < dfs.getExecutionTime() ? "Kahn" : "DFS";
+            System.out.println();
+            System.out.println(THIN_LINE);
+            System.out.println(" Schneller (einfach): " + faster);
+            System.out.println(
+                " Fuer praezise Werte: fuege diese Datei");
+            System.out.println(
+                " zu GraphSizeConfig.java hinzu und fuehre");
+            System.out.println(
+                " den Benchmark einmal aus!");
+            System.out.println(THIN_LINE);
+        }
+
         System.out.println();
     }
 
+    /**
+     * Zeigt den Gesamtprogramm-Laufzeitvergleich
+     * (Kahn-Version vs DFS-Version) basierend auf
+     * den JMH FullProgramBenchmark Ergebnissen.
+    */
+    public void printFullProgramComparison(String currentFilePath) {
+
+        System.out.println();
+        System.out.println(LINE);
+        System.out.println("#   GESAMTPROGRAMM: KAHN vs DFS        #");
+        System.out.println(LINE);
+        System.out.println();
+
+        String label = com.deployment.benchmark
+            .GraphSizeConfig.getLabelForFile(currentFilePath);
+
+        String csvPath = "full_program_results.csv";
+
+        com.deployment.benchmark.CsvResultReader.JmhResult
+            kahnJmh = null;
+        com.deployment.benchmark.CsvResultReader.JmhResult
+            dfsJmh = null;
+
+        if (label != null) {
+            kahnJmh = com.deployment.benchmark
+                .CsvResultReader.findResult(
+                    csvPath, label, "fullProgramWithKahn");
+            dfsJmh = com.deployment.benchmark
+                .CsvResultReader.findResult(
+                    csvPath, label, "fullProgramWithDFS");
+        }
+
+        if (kahnJmh != null && dfsJmh != null) {
+
+            System.out.println(
+                " [JMH] Gesamtlaufzeit in Millisekunden "
+                + "(aus " + csvPath + "):");
+            System.out.println(
+                "(YAML lesen + Graph aufbauen + Sortieren + Level-BFS):");
+            System.out.println(THIN_LINE + "-------------------------");
+            System.out.printf(
+                " %-15s %-25s %-25s%n",
+                "", "mit Kahn", "mit DFS");
+            System.out.println(THIN_LINE + "-------------------------");
+            System.out.printf(
+                " %-15s %-25s %-25s%n",
+                "Laufzeit",
+                String.format(java.util.Locale.US,
+                    "%.3f +/- %.3f %s",
+                    kahnJmh.score, kahnJmh.error, kahnJmh.unit),
+                String.format(java.util.Locale.US,
+                    "%.3f +/- %.3f %s",
+                    dfsJmh.score, dfsJmh.error, dfsJmh.unit));
+
+            String faster = kahnJmh.score < dfsJmh.score
+                ? "Kahn-Version" : "DFS-Version";
+            System.out.println(THIN_LINE + "-------------------------");
+            System.out.println(
+                " Schneller (Gesamtprogramm): " + faster);
+            System.out.println(THIN_LINE + "-------------------------");
+
+        } else {
+            System.out.println(
+                " [Hinweis] Keine JMH-Gesamtprogramm-Daten");
+            System.out.println(
+                " fuer diese Datei gefunden.");
+            System.out.println(
+                " Fuege diese Datei zu GraphSizeConfig.java");
+            System.out.println(
+                " hinzu und fuehre FullProgramBenchmark aus!");
+        }
+
+        System.out.println();
+    }
     /**
      * Tarjan Ergebnis ausgeben
      */
@@ -204,11 +316,6 @@ public class ResultPrinter {
             }
         }
         System.out.println();
-        System.out.println(THIN_LINE);
-        System.out.println(
-            " Laufzeit: "
-            + tarjan.getExecutionTime() + " ns");
-        System.out.println(THIN_LINE);
         System.out.println();
     }
 
@@ -216,16 +323,19 @@ public class ResultPrinter {
      * Feedback Arc Set Ergebnis ausgeben
      */
     public void printFAS(FeedbackArcSet fas) {
-        System.out.println();
-        System.out.println(LINE);
-        System.out.println("#          FEEDBACK ARC SET           #");
-        System.out.println(LINE);
-        System.out.println();
+    System.out.println();
+    System.out.println(LINE);
+    System.out.println("#          FEEDBACK ARC SET           #");
+    System.out.println(LINE);
+    System.out.println();
 
-        if (fas.getEdgesToRemove().isEmpty()) {
-            System.out.println(
-                " [OK] Keine Kanten zu entfernen!");
-        } else {
+    if (fas.getEdgesToRemove().isEmpty()
+            && !fas.hasUnresolvableCycles()) {
+        System.out.println(
+            " [OK] Keine Kanten zu entfernen!");
+    } else {
+
+        if (!fas.getEdgesToRemove().isEmpty()) {
             System.out.println(
                 " Entferne folgende Abhaengigkeiten:");
             System.out.println();
@@ -234,17 +344,50 @@ public class ResultPrinter {
                     "   [X] " + edge);
             }
             System.out.println();
+        }
+
+        if (!fas.hasUnresolvableCycles()) {
             System.out.println(
                 " [OK] Nach Entfernung: Kein Zyklus mehr!");
+        } else {
+            System.out.println(
+                " [FEHLER] Folgende Zyklen KONNTEN NICHT");
+            System.out.println(
+                " aufgeloest werden - alle beteiligten");
+            System.out.println(
+                " Kanten sind als 'protected_dependencies'");
+            System.out.println(
+                " markiert:");
+            System.out.println();
+            for (List<String> cycle :
+                    fas.getUnresolvableCycles()) {
+                System.out.println("   - " + cycle);
+            }
+            System.out.println();
+            System.out.println(
+                " URSACHE: Der Benutzer hat Abhaengigkeiten");
+            System.out.println(
+                " als 'protected_dependencies' geschuetzt,");
+            System.out.println(
+                " die gleichzeitig einen Zyklus bilden.");
+            System.out.println(
+                " Ein Zyklus kann nicht bestehen bleiben");
+            System.out.println(
+                " und gleichzeitig aufgeloest werden.");
+            System.out.println();
+            System.out.println(
+                " => DEPLOYMENT NICHT MOEGLICH.");
+            System.out.println(
+                " Bitte entfernen Sie den Schutz von");
+            System.out.println(
+                " mindestens einer Abhaengigkeit im Zyklus,");
+            System.out.println(
+                " oder aendern Sie die Architektur.");
         }
-        System.out.println();
-        System.out.println(THIN_LINE);
-        System.out.println(
-            " Laufzeit: "
-            + fas.getExecutionTime() + " ns");
-        System.out.println(THIN_LINE);
-        System.out.println();
     }
+
+       System.out.println();
+   }
 
     /**
      * Level-BFS Ergebnis ausgeben
@@ -290,14 +433,7 @@ public class ResultPrinter {
             + saving + " Zeiteinheiten ("
             + percent + "%)");
         System.out.println();
-        System.out.println(THIN_LINE);
-        System.out.println(
-    " Algorithmus-Laufzeit: "
-    + levelBFS.getExecutionTime() + " ns ("
-    + String.format("%.3f",
-        levelBFS.getExecutionTime() / 1_000_000.0)
-    + " ms)");
-        System.out.println(THIN_LINE);
+        System.out.println(THIN_LINE );
         System.out.println();
     }
 

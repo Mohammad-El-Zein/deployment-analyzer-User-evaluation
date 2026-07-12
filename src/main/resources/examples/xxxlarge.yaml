@@ -1,0 +1,8252 @@
+version: "3"
+services:
+  database-1:
+    depends_on: []
+  database-2:
+    depends_on: []
+  database-3:
+    depends_on: []
+  database-4:
+    depends_on: []
+  database-5:
+    depends_on: []
+  database-6:
+    depends_on: []
+  database-7:
+    depends_on: []
+  database-8:
+    depends_on: []
+  database-9:
+    depends_on: []
+  database-10:
+    depends_on: []
+  database-11:
+    depends_on: []
+  database-12:
+    depends_on: []
+  database-13:
+    depends_on: []
+  database-14:
+    depends_on: []
+  database-15:
+    depends_on: []
+  database-16:
+    depends_on: []
+  database-17:
+    depends_on: []
+  database-18:
+    depends_on: []
+  database-19:
+    depends_on: []
+  database-20:
+    depends_on: []
+  database-21:
+    depends_on: []
+  database-22:
+    depends_on: []
+  database-23:
+    depends_on: []
+  database-24:
+    depends_on: []
+  database-25:
+    depends_on: []
+  database-26:
+    depends_on: []
+  database-27:
+    depends_on: []
+  database-28:
+    depends_on: []
+  database-29:
+    depends_on: []
+  database-30:
+    depends_on: []
+  database-31:
+    depends_on: []
+  database-32:
+    depends_on: []
+  database-33:
+    depends_on: []
+  database-34:
+    depends_on: []
+  database-35:
+    depends_on: []
+  database-36:
+    depends_on: []
+  database-37:
+    depends_on: []
+  database-38:
+    depends_on: []
+  database-39:
+    depends_on: []
+  database-40:
+    depends_on: []
+  database-41:
+    depends_on: []
+  database-42:
+    depends_on: []
+  database-43:
+    depends_on: []
+  database-44:
+    depends_on: []
+  database-45:
+    depends_on: []
+  database-46:
+    depends_on: []
+  database-47:
+    depends_on: []
+  database-48:
+    depends_on: []
+  database-49:
+    depends_on: []
+  database-50:
+    depends_on: []
+  database-51:
+    depends_on: []
+  database-52:
+    depends_on: []
+  database-53:
+    depends_on: []
+  database-54:
+    depends_on: []
+  database-55:
+    depends_on: []
+  database-56:
+    depends_on: []
+  database-57:
+    depends_on: []
+  database-58:
+    depends_on: []
+  database-59:
+    depends_on: []
+  database-60:
+    depends_on: []
+  database-61:
+    depends_on: []
+  database-62:
+    depends_on: []
+  database-63:
+    depends_on: []
+  database-64:
+    depends_on: []
+  database-65:
+    depends_on: []
+  database-66:
+    depends_on: []
+  database-67:
+    depends_on: []
+  database-68:
+    depends_on: []
+  database-69:
+    depends_on: []
+  database-70:
+    depends_on: []
+  database-71:
+    depends_on: []
+  database-72:
+    depends_on: []
+  database-73:
+    depends_on: []
+  database-74:
+    depends_on: []
+  database-75:
+    depends_on: []
+  database-76:
+    depends_on: []
+  database-77:
+    depends_on: []
+  database-78:
+    depends_on: []
+  database-79:
+    depends_on: []
+  database-80:
+    depends_on: []
+  database-81:
+    depends_on: []
+  database-82:
+    depends_on: []
+  database-83:
+    depends_on: []
+  database-84:
+    depends_on: []
+  database-85:
+    depends_on: []
+  database-86:
+    depends_on: []
+  database-87:
+    depends_on: []
+  database-88:
+    depends_on: []
+  database-89:
+    depends_on: []
+  database-90:
+    depends_on: []
+  database-91:
+    depends_on: []
+  database-92:
+    depends_on: []
+  database-93:
+    depends_on: []
+  database-94:
+    depends_on: []
+  database-95:
+    depends_on: []
+  database-96:
+    depends_on: []
+  database-97:
+    depends_on: []
+  database-98:
+    depends_on: []
+  database-99:
+    depends_on: []
+  database-100:
+    depends_on: []
+  database-101:
+    depends_on: []
+  database-102:
+    depends_on: []
+  database-103:
+    depends_on: []
+  database-104:
+    depends_on: []
+  database-105:
+    depends_on: []
+  database-106:
+    depends_on: []
+  database-107:
+    depends_on: []
+  database-108:
+    depends_on: []
+  database-109:
+    depends_on: []
+  database-110:
+    depends_on: []
+  database-111:
+    depends_on: []
+  database-112:
+    depends_on: []
+  database-113:
+    depends_on: []
+  database-114:
+    depends_on: []
+  database-115:
+    depends_on: []
+  database-116:
+    depends_on: []
+  database-117:
+    depends_on: []
+  database-118:
+    depends_on: []
+  database-119:
+    depends_on: []
+  database-120:
+    depends_on: []
+  database-121:
+    depends_on: []
+  database-122:
+    depends_on: []
+  database-123:
+    depends_on: []
+  database-124:
+    depends_on: []
+  database-125:
+    depends_on: []
+  database-126:
+    depends_on: []
+  database-127:
+    depends_on: []
+  database-128:
+    depends_on: []
+  database-129:
+    depends_on: []
+  database-130:
+    depends_on: []
+  database-131:
+    depends_on: []
+  database-132:
+    depends_on: []
+  database-133:
+    depends_on: []
+  database-134:
+    depends_on: []
+  database-135:
+    depends_on: []
+  database-136:
+    depends_on: []
+  database-137:
+    depends_on: []
+  database-138:
+    depends_on: []
+  database-139:
+    depends_on: []
+  database-140:
+    depends_on: []
+  database-141:
+    depends_on: []
+  database-142:
+    depends_on: []
+  database-143:
+    depends_on: []
+  database-144:
+    depends_on: []
+  database-145:
+    depends_on: []
+  database-146:
+    depends_on: []
+  database-147:
+    depends_on: []
+  database-148:
+    depends_on: []
+  database-149:
+    depends_on: []
+  database-150:
+    depends_on: []
+  cache-1:
+    depends_on: []
+  cache-2:
+    depends_on: []
+  cache-3:
+    depends_on: []
+  cache-4:
+    depends_on: []
+  cache-5:
+    depends_on: []
+  cache-6:
+    depends_on: []
+  cache-7:
+    depends_on: []
+  cache-8:
+    depends_on: []
+  cache-9:
+    depends_on: []
+  cache-10:
+    depends_on: []
+  cache-11:
+    depends_on: []
+  cache-12:
+    depends_on: []
+  cache-13:
+    depends_on: []
+  cache-14:
+    depends_on: []
+  cache-15:
+    depends_on: []
+  cache-16:
+    depends_on: []
+  cache-17:
+    depends_on: []
+  cache-18:
+    depends_on: []
+  cache-19:
+    depends_on: []
+  cache-20:
+    depends_on: []
+  cache-21:
+    depends_on: []
+  cache-22:
+    depends_on: []
+  cache-23:
+    depends_on: []
+  cache-24:
+    depends_on: []
+  cache-25:
+    depends_on: []
+  cache-26:
+    depends_on: []
+  cache-27:
+    depends_on: []
+  cache-28:
+    depends_on: []
+  cache-29:
+    depends_on: []
+  cache-30:
+    depends_on: []
+  cache-31:
+    depends_on: []
+  cache-32:
+    depends_on: []
+  cache-33:
+    depends_on: []
+  cache-34:
+    depends_on: []
+  cache-35:
+    depends_on: []
+  cache-36:
+    depends_on: []
+  cache-37:
+    depends_on: []
+  cache-38:
+    depends_on: []
+  cache-39:
+    depends_on: []
+  cache-40:
+    depends_on: []
+  cache-41:
+    depends_on: []
+  cache-42:
+    depends_on: []
+  cache-43:
+    depends_on: []
+  cache-44:
+    depends_on: []
+  cache-45:
+    depends_on: []
+  cache-46:
+    depends_on: []
+  cache-47:
+    depends_on: []
+  cache-48:
+    depends_on: []
+  cache-49:
+    depends_on: []
+  cache-50:
+    depends_on: []
+  cache-51:
+    depends_on: []
+  cache-52:
+    depends_on: []
+  cache-53:
+    depends_on: []
+  cache-54:
+    depends_on: []
+  cache-55:
+    depends_on: []
+  cache-56:
+    depends_on: []
+  cache-57:
+    depends_on: []
+  cache-58:
+    depends_on: []
+  cache-59:
+    depends_on: []
+  cache-60:
+    depends_on: []
+  cache-61:
+    depends_on: []
+  cache-62:
+    depends_on: []
+  cache-63:
+    depends_on: []
+  cache-64:
+    depends_on: []
+  cache-65:
+    depends_on: []
+  cache-66:
+    depends_on: []
+  cache-67:
+    depends_on: []
+  cache-68:
+    depends_on: []
+  cache-69:
+    depends_on: []
+  cache-70:
+    depends_on: []
+  cache-71:
+    depends_on: []
+  cache-72:
+    depends_on: []
+  cache-73:
+    depends_on: []
+  cache-74:
+    depends_on: []
+  cache-75:
+    depends_on: []
+  cache-76:
+    depends_on: []
+  cache-77:
+    depends_on: []
+  cache-78:
+    depends_on: []
+  cache-79:
+    depends_on: []
+  cache-80:
+    depends_on: []
+  cache-81:
+    depends_on: []
+  cache-82:
+    depends_on: []
+  cache-83:
+    depends_on: []
+  cache-84:
+    depends_on: []
+  cache-85:
+    depends_on: []
+  cache-86:
+    depends_on: []
+  cache-87:
+    depends_on: []
+  cache-88:
+    depends_on: []
+  cache-89:
+    depends_on: []
+  cache-90:
+    depends_on: []
+  cache-91:
+    depends_on: []
+  cache-92:
+    depends_on: []
+  cache-93:
+    depends_on: []
+  cache-94:
+    depends_on: []
+  cache-95:
+    depends_on: []
+  cache-96:
+    depends_on: []
+  cache-97:
+    depends_on: []
+  cache-98:
+    depends_on: []
+  cache-99:
+    depends_on: []
+  cache-100:
+    depends_on: []
+  broker-1:
+    depends_on: []
+  broker-2:
+    depends_on: []
+  broker-3:
+    depends_on: []
+  broker-4:
+    depends_on: []
+  broker-5:
+    depends_on: []
+  broker-6:
+    depends_on: []
+  broker-7:
+    depends_on: []
+  broker-8:
+    depends_on: []
+  broker-9:
+    depends_on: []
+  broker-10:
+    depends_on: []
+  broker-11:
+    depends_on: []
+  broker-12:
+    depends_on: []
+  broker-13:
+    depends_on: []
+  broker-14:
+    depends_on: []
+  broker-15:
+    depends_on: []
+  broker-16:
+    depends_on: []
+  broker-17:
+    depends_on: []
+  broker-18:
+    depends_on: []
+  broker-19:
+    depends_on: []
+  broker-20:
+    depends_on: []
+  broker-21:
+    depends_on: []
+  broker-22:
+    depends_on: []
+  broker-23:
+    depends_on: []
+  broker-24:
+    depends_on: []
+  broker-25:
+    depends_on: []
+  broker-26:
+    depends_on: []
+  broker-27:
+    depends_on: []
+  broker-28:
+    depends_on: []
+  broker-29:
+    depends_on: []
+  broker-30:
+    depends_on: []
+  broker-31:
+    depends_on: []
+  broker-32:
+    depends_on: []
+  broker-33:
+    depends_on: []
+  broker-34:
+    depends_on: []
+  broker-35:
+    depends_on: []
+  broker-36:
+    depends_on: []
+  broker-37:
+    depends_on: []
+  broker-38:
+    depends_on: []
+  broker-39:
+    depends_on: []
+  broker-40:
+    depends_on: []
+  broker-41:
+    depends_on: []
+  broker-42:
+    depends_on: []
+  broker-43:
+    depends_on: []
+  broker-44:
+    depends_on: []
+  broker-45:
+    depends_on: []
+  broker-46:
+    depends_on: []
+  broker-47:
+    depends_on: []
+  broker-48:
+    depends_on: []
+  broker-49:
+    depends_on: []
+  broker-50:
+    depends_on: []
+  auth-service-1:
+    depends_on:
+      - database-2
+      - cache-2
+  auth-service-2:
+    depends_on:
+      - database-3
+      - cache-3
+  auth-service-3:
+    depends_on:
+      - database-4
+      - cache-4
+  auth-service-4:
+    depends_on:
+      - database-5
+      - cache-5
+  auth-service-5:
+    depends_on:
+      - database-6
+      - cache-6
+  auth-service-6:
+    depends_on:
+      - database-7
+      - cache-7
+  auth-service-7:
+    depends_on:
+      - database-8
+      - cache-8
+  auth-service-8:
+    depends_on:
+      - database-9
+      - cache-9
+  auth-service-9:
+    depends_on:
+      - database-10
+      - cache-10
+  auth-service-10:
+    depends_on:
+      - database-11
+      - cache-11
+  auth-service-11:
+    depends_on:
+      - database-12
+      - cache-12
+  auth-service-12:
+    depends_on:
+      - database-13
+      - cache-13
+  auth-service-13:
+    depends_on:
+      - database-14
+      - cache-14
+  auth-service-14:
+    depends_on:
+      - database-15
+      - cache-15
+  auth-service-15:
+    depends_on:
+      - database-16
+      - cache-16
+  auth-service-16:
+    depends_on:
+      - database-17
+      - cache-17
+  auth-service-17:
+    depends_on:
+      - database-18
+      - cache-18
+  auth-service-18:
+    depends_on:
+      - database-19
+      - cache-19
+  auth-service-19:
+    depends_on:
+      - database-20
+      - cache-20
+  auth-service-20:
+    depends_on:
+      - database-21
+      - cache-21
+  auth-service-21:
+    depends_on:
+      - database-22
+      - cache-22
+  auth-service-22:
+    depends_on:
+      - database-23
+      - cache-23
+  auth-service-23:
+    depends_on:
+      - database-24
+      - cache-24
+  auth-service-24:
+    depends_on:
+      - database-25
+      - cache-25
+  auth-service-25:
+    depends_on:
+      - database-26
+      - cache-26
+  auth-service-26:
+    depends_on:
+      - database-27
+      - cache-27
+  auth-service-27:
+    depends_on:
+      - database-28
+      - cache-28
+  auth-service-28:
+    depends_on:
+      - database-29
+      - cache-29
+  auth-service-29:
+    depends_on:
+      - database-30
+      - cache-30
+  auth-service-30:
+    depends_on:
+      - database-31
+      - cache-31
+  auth-service-31:
+    depends_on:
+      - database-32
+      - cache-32
+  auth-service-32:
+    depends_on:
+      - database-33
+      - cache-33
+  auth-service-33:
+    depends_on:
+      - database-34
+      - cache-34
+  auth-service-34:
+    depends_on:
+      - database-35
+      - cache-35
+  auth-service-35:
+    depends_on:
+      - database-36
+      - cache-36
+  auth-service-36:
+    depends_on:
+      - database-37
+      - cache-37
+  auth-service-37:
+    depends_on:
+      - database-38
+      - cache-38
+  auth-service-38:
+    depends_on:
+      - database-39
+      - cache-39
+  auth-service-39:
+    depends_on:
+      - database-40
+      - cache-40
+  auth-service-40:
+    depends_on:
+      - database-41
+      - cache-41
+  auth-service-41:
+    depends_on:
+      - database-42
+      - cache-42
+  auth-service-42:
+    depends_on:
+      - database-43
+      - cache-43
+  auth-service-43:
+    depends_on:
+      - database-44
+      - cache-44
+  auth-service-44:
+    depends_on:
+      - database-45
+      - cache-45
+  auth-service-45:
+    depends_on:
+      - database-46
+      - cache-46
+  auth-service-46:
+    depends_on:
+      - database-47
+      - cache-47
+  auth-service-47:
+    depends_on:
+      - database-48
+      - cache-48
+  auth-service-48:
+    depends_on:
+      - database-49
+      - cache-49
+  auth-service-49:
+    depends_on:
+      - database-50
+      - cache-50
+  auth-service-50:
+    depends_on:
+      - database-51
+      - cache-51
+  auth-service-51:
+    depends_on:
+      - database-52
+      - cache-52
+  auth-service-52:
+    depends_on:
+      - database-53
+      - cache-53
+  auth-service-53:
+    depends_on:
+      - database-54
+      - cache-54
+  auth-service-54:
+    depends_on:
+      - database-55
+      - cache-55
+  auth-service-55:
+    depends_on:
+      - database-56
+      - cache-56
+  auth-service-56:
+    depends_on:
+      - database-57
+      - cache-57
+  auth-service-57:
+    depends_on:
+      - database-58
+      - cache-58
+  auth-service-58:
+    depends_on:
+      - database-59
+      - cache-59
+  auth-service-59:
+    depends_on:
+      - database-60
+      - cache-60
+  auth-service-60:
+    depends_on:
+      - database-61
+      - cache-61
+  auth-service-61:
+    depends_on:
+      - database-62
+      - cache-62
+  auth-service-62:
+    depends_on:
+      - database-63
+      - cache-63
+  auth-service-63:
+    depends_on:
+      - database-64
+      - cache-64
+  auth-service-64:
+    depends_on:
+      - database-65
+      - cache-65
+  auth-service-65:
+    depends_on:
+      - database-66
+      - cache-66
+  auth-service-66:
+    depends_on:
+      - database-67
+      - cache-67
+  auth-service-67:
+    depends_on:
+      - database-68
+      - cache-68
+  auth-service-68:
+    depends_on:
+      - database-69
+      - cache-69
+  auth-service-69:
+    depends_on:
+      - database-70
+      - cache-70
+  auth-service-70:
+    depends_on:
+      - database-71
+      - cache-71
+  auth-service-71:
+    depends_on:
+      - database-72
+      - cache-72
+  auth-service-72:
+    depends_on:
+      - database-73
+      - cache-73
+  auth-service-73:
+    depends_on:
+      - database-74
+      - cache-74
+  auth-service-74:
+    depends_on:
+      - database-75
+      - cache-75
+  auth-service-75:
+    depends_on:
+      - database-76
+      - cache-76
+  auth-service-76:
+    depends_on:
+      - database-77
+      - cache-77
+  auth-service-77:
+    depends_on:
+      - database-78
+      - cache-78
+  auth-service-78:
+    depends_on:
+      - database-79
+      - cache-79
+  auth-service-79:
+    depends_on:
+      - database-80
+      - cache-80
+  auth-service-80:
+    depends_on:
+      - database-81
+      - cache-81
+  auth-service-81:
+    depends_on:
+      - database-82
+      - cache-82
+  auth-service-82:
+    depends_on:
+      - database-83
+      - cache-83
+  auth-service-83:
+    depends_on:
+      - database-84
+      - cache-84
+  auth-service-84:
+    depends_on:
+      - database-85
+      - cache-85
+  auth-service-85:
+    depends_on:
+      - database-86
+      - cache-86
+  auth-service-86:
+    depends_on:
+      - database-87
+      - cache-87
+  auth-service-87:
+    depends_on:
+      - database-88
+      - cache-88
+  auth-service-88:
+    depends_on:
+      - database-89
+      - cache-89
+  auth-service-89:
+    depends_on:
+      - database-90
+      - cache-90
+  auth-service-90:
+    depends_on:
+      - database-91
+      - cache-91
+  auth-service-91:
+    depends_on:
+      - database-92
+      - cache-92
+  auth-service-92:
+    depends_on:
+      - database-93
+      - cache-93
+  auth-service-93:
+    depends_on:
+      - database-94
+      - cache-94
+  auth-service-94:
+    depends_on:
+      - database-95
+      - cache-95
+  auth-service-95:
+    depends_on:
+      - database-96
+      - cache-96
+  auth-service-96:
+    depends_on:
+      - database-97
+      - cache-97
+  auth-service-97:
+    depends_on:
+      - database-98
+      - cache-98
+  auth-service-98:
+    depends_on:
+      - database-99
+      - cache-99
+  auth-service-99:
+    depends_on:
+      - database-100
+      - cache-100
+  auth-service-100:
+    depends_on:
+      - database-101
+      - cache-1
+  core-service-1:
+    depends_on:
+      - auth-service-2
+      - database-2
+  core-service-2:
+    depends_on:
+      - auth-service-3
+      - database-3
+  core-service-3:
+    depends_on:
+      - auth-service-4
+      - database-4
+  core-service-4:
+    depends_on:
+      - auth-service-5
+      - database-5
+  core-service-5:
+    depends_on:
+      - auth-service-6
+      - database-6
+  core-service-6:
+    depends_on:
+      - auth-service-7
+      - database-7
+  core-service-7:
+    depends_on:
+      - auth-service-8
+      - database-8
+  core-service-8:
+    depends_on:
+      - auth-service-9
+      - database-9
+  core-service-9:
+    depends_on:
+      - auth-service-10
+      - database-10
+  core-service-10:
+    depends_on:
+      - auth-service-11
+      - database-11
+  core-service-11:
+    depends_on:
+      - auth-service-12
+      - database-12
+  core-service-12:
+    depends_on:
+      - auth-service-13
+      - database-13
+  core-service-13:
+    depends_on:
+      - auth-service-14
+      - database-14
+  core-service-14:
+    depends_on:
+      - auth-service-15
+      - database-15
+  core-service-15:
+    depends_on:
+      - auth-service-16
+      - database-16
+  core-service-16:
+    depends_on:
+      - auth-service-17
+      - database-17
+  core-service-17:
+    depends_on:
+      - auth-service-18
+      - database-18
+  core-service-18:
+    depends_on:
+      - auth-service-19
+      - database-19
+  core-service-19:
+    depends_on:
+      - auth-service-20
+      - database-20
+  core-service-20:
+    depends_on:
+      - auth-service-21
+      - database-21
+  core-service-21:
+    depends_on:
+      - auth-service-22
+      - database-22
+  core-service-22:
+    depends_on:
+      - auth-service-23
+      - database-23
+  core-service-23:
+    depends_on:
+      - auth-service-24
+      - database-24
+  core-service-24:
+    depends_on:
+      - auth-service-25
+      - database-25
+  core-service-25:
+    depends_on:
+      - auth-service-26
+      - database-26
+  core-service-26:
+    depends_on:
+      - auth-service-27
+      - database-27
+  core-service-27:
+    depends_on:
+      - auth-service-28
+      - database-28
+  core-service-28:
+    depends_on:
+      - auth-service-29
+      - database-29
+  core-service-29:
+    depends_on:
+      - auth-service-30
+      - database-30
+  core-service-30:
+    depends_on:
+      - auth-service-31
+      - database-31
+  core-service-31:
+    depends_on:
+      - auth-service-32
+      - database-32
+  core-service-32:
+    depends_on:
+      - auth-service-33
+      - database-33
+  core-service-33:
+    depends_on:
+      - auth-service-34
+      - database-34
+  core-service-34:
+    depends_on:
+      - auth-service-35
+      - database-35
+  core-service-35:
+    depends_on:
+      - auth-service-36
+      - database-36
+  core-service-36:
+    depends_on:
+      - auth-service-37
+      - database-37
+  core-service-37:
+    depends_on:
+      - auth-service-38
+      - database-38
+  core-service-38:
+    depends_on:
+      - auth-service-39
+      - database-39
+  core-service-39:
+    depends_on:
+      - auth-service-40
+      - database-40
+  core-service-40:
+    depends_on:
+      - auth-service-41
+      - database-41
+  core-service-41:
+    depends_on:
+      - auth-service-42
+      - database-42
+  core-service-42:
+    depends_on:
+      - auth-service-43
+      - database-43
+  core-service-43:
+    depends_on:
+      - auth-service-44
+      - database-44
+  core-service-44:
+    depends_on:
+      - auth-service-45
+      - database-45
+  core-service-45:
+    depends_on:
+      - auth-service-46
+      - database-46
+  core-service-46:
+    depends_on:
+      - auth-service-47
+      - database-47
+  core-service-47:
+    depends_on:
+      - auth-service-48
+      - database-48
+  core-service-48:
+    depends_on:
+      - auth-service-49
+      - database-49
+  core-service-49:
+    depends_on:
+      - auth-service-50
+      - database-50
+  core-service-50:
+    depends_on:
+      - auth-service-51
+      - database-51
+  core-service-51:
+    depends_on:
+      - auth-service-52
+      - database-52
+  core-service-52:
+    depends_on:
+      - auth-service-53
+      - database-53
+  core-service-53:
+    depends_on:
+      - auth-service-54
+      - database-54
+  core-service-54:
+    depends_on:
+      - auth-service-55
+      - database-55
+  core-service-55:
+    depends_on:
+      - auth-service-56
+      - database-56
+  core-service-56:
+    depends_on:
+      - auth-service-57
+      - database-57
+  core-service-57:
+    depends_on:
+      - auth-service-58
+      - database-58
+  core-service-58:
+    depends_on:
+      - auth-service-59
+      - database-59
+  core-service-59:
+    depends_on:
+      - auth-service-60
+      - database-60
+  core-service-60:
+    depends_on:
+      - auth-service-61
+      - database-61
+  core-service-61:
+    depends_on:
+      - auth-service-62
+      - database-62
+  core-service-62:
+    depends_on:
+      - auth-service-63
+      - database-63
+  core-service-63:
+    depends_on:
+      - auth-service-64
+      - database-64
+  core-service-64:
+    depends_on:
+      - auth-service-65
+      - database-65
+  core-service-65:
+    depends_on:
+      - auth-service-66
+      - database-66
+  core-service-66:
+    depends_on:
+      - auth-service-67
+      - database-67
+  core-service-67:
+    depends_on:
+      - auth-service-68
+      - database-68
+  core-service-68:
+    depends_on:
+      - auth-service-69
+      - database-69
+  core-service-69:
+    depends_on:
+      - auth-service-70
+      - database-70
+  core-service-70:
+    depends_on:
+      - auth-service-71
+      - database-71
+  core-service-71:
+    depends_on:
+      - auth-service-72
+      - database-72
+  core-service-72:
+    depends_on:
+      - auth-service-73
+      - database-73
+  core-service-73:
+    depends_on:
+      - auth-service-74
+      - database-74
+  core-service-74:
+    depends_on:
+      - auth-service-75
+      - database-75
+  core-service-75:
+    depends_on:
+      - auth-service-76
+      - database-76
+  core-service-76:
+    depends_on:
+      - auth-service-77
+      - database-77
+  core-service-77:
+    depends_on:
+      - auth-service-78
+      - database-78
+  core-service-78:
+    depends_on:
+      - auth-service-79
+      - database-79
+  core-service-79:
+    depends_on:
+      - auth-service-80
+      - database-80
+  core-service-80:
+    depends_on:
+      - auth-service-81
+      - database-81
+  core-service-81:
+    depends_on:
+      - auth-service-82
+      - database-82
+  core-service-82:
+    depends_on:
+      - auth-service-83
+      - database-83
+  core-service-83:
+    depends_on:
+      - auth-service-84
+      - database-84
+  core-service-84:
+    depends_on:
+      - auth-service-85
+      - database-85
+  core-service-85:
+    depends_on:
+      - auth-service-86
+      - database-86
+  core-service-86:
+    depends_on:
+      - auth-service-87
+      - database-87
+  core-service-87:
+    depends_on:
+      - auth-service-88
+      - database-88
+  core-service-88:
+    depends_on:
+      - auth-service-89
+      - database-89
+  core-service-89:
+    depends_on:
+      - auth-service-90
+      - database-90
+  core-service-90:
+    depends_on:
+      - auth-service-91
+      - database-91
+  core-service-91:
+    depends_on:
+      - auth-service-92
+      - database-92
+  core-service-92:
+    depends_on:
+      - auth-service-93
+      - database-93
+  core-service-93:
+    depends_on:
+      - auth-service-94
+      - database-94
+  core-service-94:
+    depends_on:
+      - auth-service-95
+      - database-95
+  core-service-95:
+    depends_on:
+      - auth-service-96
+      - database-96
+  core-service-96:
+    depends_on:
+      - auth-service-97
+      - database-97
+  core-service-97:
+    depends_on:
+      - auth-service-98
+      - database-98
+  core-service-98:
+    depends_on:
+      - auth-service-99
+      - database-99
+  core-service-99:
+    depends_on:
+      - auth-service-100
+      - database-100
+  core-service-100:
+    depends_on:
+      - auth-service-1
+      - database-101
+  core-service-101:
+    depends_on:
+      - auth-service-2
+      - database-102
+  core-service-102:
+    depends_on:
+      - auth-service-3
+      - database-103
+  core-service-103:
+    depends_on:
+      - auth-service-4
+      - database-104
+  core-service-104:
+    depends_on:
+      - auth-service-5
+      - database-105
+  core-service-105:
+    depends_on:
+      - auth-service-6
+      - database-106
+  core-service-106:
+    depends_on:
+      - auth-service-7
+      - database-107
+  core-service-107:
+    depends_on:
+      - auth-service-8
+      - database-108
+  core-service-108:
+    depends_on:
+      - auth-service-9
+      - database-109
+  core-service-109:
+    depends_on:
+      - auth-service-10
+      - database-110
+  core-service-110:
+    depends_on:
+      - auth-service-11
+      - database-111
+  core-service-111:
+    depends_on:
+      - auth-service-12
+      - database-112
+  core-service-112:
+    depends_on:
+      - auth-service-13
+      - database-113
+  core-service-113:
+    depends_on:
+      - auth-service-14
+      - database-114
+  core-service-114:
+    depends_on:
+      - auth-service-15
+      - database-115
+  core-service-115:
+    depends_on:
+      - auth-service-16
+      - database-116
+  core-service-116:
+    depends_on:
+      - auth-service-17
+      - database-117
+  core-service-117:
+    depends_on:
+      - auth-service-18
+      - database-118
+  core-service-118:
+    depends_on:
+      - auth-service-19
+      - database-119
+  core-service-119:
+    depends_on:
+      - auth-service-20
+      - database-120
+  core-service-120:
+    depends_on:
+      - auth-service-21
+      - database-121
+  core-service-121:
+    depends_on:
+      - auth-service-22
+      - database-122
+  core-service-122:
+    depends_on:
+      - auth-service-23
+      - database-123
+  core-service-123:
+    depends_on:
+      - auth-service-24
+      - database-124
+  core-service-124:
+    depends_on:
+      - auth-service-25
+      - database-125
+  core-service-125:
+    depends_on:
+      - auth-service-26
+      - database-126
+  core-service-126:
+    depends_on:
+      - auth-service-27
+      - database-127
+  core-service-127:
+    depends_on:
+      - auth-service-28
+      - database-128
+  core-service-128:
+    depends_on:
+      - auth-service-29
+      - database-129
+  core-service-129:
+    depends_on:
+      - auth-service-30
+      - database-130
+  core-service-130:
+    depends_on:
+      - auth-service-31
+      - database-131
+  core-service-131:
+    depends_on:
+      - auth-service-32
+      - database-132
+  core-service-132:
+    depends_on:
+      - auth-service-33
+      - database-133
+  core-service-133:
+    depends_on:
+      - auth-service-34
+      - database-134
+  core-service-134:
+    depends_on:
+      - auth-service-35
+      - database-135
+  core-service-135:
+    depends_on:
+      - auth-service-36
+      - database-136
+  core-service-136:
+    depends_on:
+      - auth-service-37
+      - database-137
+  core-service-137:
+    depends_on:
+      - auth-service-38
+      - database-138
+  core-service-138:
+    depends_on:
+      - auth-service-39
+      - database-139
+  core-service-139:
+    depends_on:
+      - auth-service-40
+      - database-140
+  core-service-140:
+    depends_on:
+      - auth-service-41
+      - database-141
+  core-service-141:
+    depends_on:
+      - auth-service-42
+      - database-142
+  core-service-142:
+    depends_on:
+      - auth-service-43
+      - database-143
+  core-service-143:
+    depends_on:
+      - auth-service-44
+      - database-144
+  core-service-144:
+    depends_on:
+      - auth-service-45
+      - database-145
+  core-service-145:
+    depends_on:
+      - auth-service-46
+      - database-146
+  core-service-146:
+    depends_on:
+      - auth-service-47
+      - database-147
+  core-service-147:
+    depends_on:
+      - auth-service-48
+      - database-148
+  core-service-148:
+    depends_on:
+      - auth-service-49
+      - database-149
+  core-service-149:
+    depends_on:
+      - auth-service-50
+      - database-150
+  core-service-150:
+    depends_on:
+      - auth-service-51
+      - database-1
+  core-service-151:
+    depends_on:
+      - auth-service-52
+      - database-2
+  core-service-152:
+    depends_on:
+      - auth-service-53
+      - database-3
+  core-service-153:
+    depends_on:
+      - auth-service-54
+      - database-4
+  core-service-154:
+    depends_on:
+      - auth-service-55
+      - database-5
+  core-service-155:
+    depends_on:
+      - auth-service-56
+      - database-6
+  core-service-156:
+    depends_on:
+      - auth-service-57
+      - database-7
+  core-service-157:
+    depends_on:
+      - auth-service-58
+      - database-8
+  core-service-158:
+    depends_on:
+      - auth-service-59
+      - database-9
+  core-service-159:
+    depends_on:
+      - auth-service-60
+      - database-10
+  core-service-160:
+    depends_on:
+      - auth-service-61
+      - database-11
+  core-service-161:
+    depends_on:
+      - auth-service-62
+      - database-12
+  core-service-162:
+    depends_on:
+      - auth-service-63
+      - database-13
+  core-service-163:
+    depends_on:
+      - auth-service-64
+      - database-14
+  core-service-164:
+    depends_on:
+      - auth-service-65
+      - database-15
+  core-service-165:
+    depends_on:
+      - auth-service-66
+      - database-16
+  core-service-166:
+    depends_on:
+      - auth-service-67
+      - database-17
+  core-service-167:
+    depends_on:
+      - auth-service-68
+      - database-18
+  core-service-168:
+    depends_on:
+      - auth-service-69
+      - database-19
+  core-service-169:
+    depends_on:
+      - auth-service-70
+      - database-20
+  core-service-170:
+    depends_on:
+      - auth-service-71
+      - database-21
+  core-service-171:
+    depends_on:
+      - auth-service-72
+      - database-22
+  core-service-172:
+    depends_on:
+      - auth-service-73
+      - database-23
+  core-service-173:
+    depends_on:
+      - auth-service-74
+      - database-24
+  core-service-174:
+    depends_on:
+      - auth-service-75
+      - database-25
+  core-service-175:
+    depends_on:
+      - auth-service-76
+      - database-26
+  core-service-176:
+    depends_on:
+      - auth-service-77
+      - database-27
+  core-service-177:
+    depends_on:
+      - auth-service-78
+      - database-28
+  core-service-178:
+    depends_on:
+      - auth-service-79
+      - database-29
+  core-service-179:
+    depends_on:
+      - auth-service-80
+      - database-30
+  core-service-180:
+    depends_on:
+      - auth-service-81
+      - database-31
+  core-service-181:
+    depends_on:
+      - auth-service-82
+      - database-32
+  core-service-182:
+    depends_on:
+      - auth-service-83
+      - database-33
+  core-service-183:
+    depends_on:
+      - auth-service-84
+      - database-34
+  core-service-184:
+    depends_on:
+      - auth-service-85
+      - database-35
+  core-service-185:
+    depends_on:
+      - auth-service-86
+      - database-36
+  core-service-186:
+    depends_on:
+      - auth-service-87
+      - database-37
+  core-service-187:
+    depends_on:
+      - auth-service-88
+      - database-38
+  core-service-188:
+    depends_on:
+      - auth-service-89
+      - database-39
+  core-service-189:
+    depends_on:
+      - auth-service-90
+      - database-40
+  core-service-190:
+    depends_on:
+      - auth-service-91
+      - database-41
+  core-service-191:
+    depends_on:
+      - auth-service-92
+      - database-42
+  core-service-192:
+    depends_on:
+      - auth-service-93
+      - database-43
+  core-service-193:
+    depends_on:
+      - auth-service-94
+      - database-44
+  core-service-194:
+    depends_on:
+      - auth-service-95
+      - database-45
+  core-service-195:
+    depends_on:
+      - auth-service-96
+      - database-46
+  core-service-196:
+    depends_on:
+      - auth-service-97
+      - database-47
+  core-service-197:
+    depends_on:
+      - auth-service-98
+      - database-48
+  core-service-198:
+    depends_on:
+      - auth-service-99
+      - database-49
+  core-service-199:
+    depends_on:
+      - auth-service-100
+      - database-50
+  core-service-200:
+    depends_on:
+      - auth-service-1
+      - database-51
+  business-service-1:
+    depends_on:
+      - core-service-2
+      - broker-2
+  business-service-2:
+    depends_on:
+      - core-service-3
+      - broker-3
+  business-service-3:
+    depends_on:
+      - core-service-4
+      - broker-4
+  business-service-4:
+    depends_on:
+      - core-service-5
+      - broker-5
+  business-service-5:
+    depends_on:
+      - core-service-6
+      - broker-6
+  business-service-6:
+    depends_on:
+      - core-service-7
+      - broker-7
+  business-service-7:
+    depends_on:
+      - core-service-8
+      - broker-8
+  business-service-8:
+    depends_on:
+      - core-service-9
+      - broker-9
+  business-service-9:
+    depends_on:
+      - core-service-10
+      - broker-10
+  business-service-10:
+    depends_on:
+      - core-service-11
+      - broker-11
+  business-service-11:
+    depends_on:
+      - core-service-12
+      - broker-12
+  business-service-12:
+    depends_on:
+      - core-service-13
+      - broker-13
+  business-service-13:
+    depends_on:
+      - core-service-14
+      - broker-14
+  business-service-14:
+    depends_on:
+      - core-service-15
+      - broker-15
+  business-service-15:
+    depends_on:
+      - core-service-16
+      - broker-16
+  business-service-16:
+    depends_on:
+      - core-service-17
+      - broker-17
+  business-service-17:
+    depends_on:
+      - core-service-18
+      - broker-18
+  business-service-18:
+    depends_on:
+      - core-service-19
+      - broker-19
+  business-service-19:
+    depends_on:
+      - core-service-20
+      - broker-20
+  business-service-20:
+    depends_on:
+      - core-service-21
+      - broker-21
+  business-service-21:
+    depends_on:
+      - core-service-22
+      - broker-22
+  business-service-22:
+    depends_on:
+      - core-service-23
+      - broker-23
+  business-service-23:
+    depends_on:
+      - core-service-24
+      - broker-24
+  business-service-24:
+    depends_on:
+      - core-service-25
+      - broker-25
+  business-service-25:
+    depends_on:
+      - core-service-26
+      - broker-26
+  business-service-26:
+    depends_on:
+      - core-service-27
+      - broker-27
+  business-service-27:
+    depends_on:
+      - core-service-28
+      - broker-28
+  business-service-28:
+    depends_on:
+      - core-service-29
+      - broker-29
+  business-service-29:
+    depends_on:
+      - core-service-30
+      - broker-30
+  business-service-30:
+    depends_on:
+      - core-service-31
+      - broker-31
+  business-service-31:
+    depends_on:
+      - core-service-32
+      - broker-32
+  business-service-32:
+    depends_on:
+      - core-service-33
+      - broker-33
+  business-service-33:
+    depends_on:
+      - core-service-34
+      - broker-34
+  business-service-34:
+    depends_on:
+      - core-service-35
+      - broker-35
+  business-service-35:
+    depends_on:
+      - core-service-36
+      - broker-36
+  business-service-36:
+    depends_on:
+      - core-service-37
+      - broker-37
+  business-service-37:
+    depends_on:
+      - core-service-38
+      - broker-38
+  business-service-38:
+    depends_on:
+      - core-service-39
+      - broker-39
+  business-service-39:
+    depends_on:
+      - core-service-40
+      - broker-40
+  business-service-40:
+    depends_on:
+      - core-service-41
+      - broker-41
+  business-service-41:
+    depends_on:
+      - core-service-42
+      - broker-42
+  business-service-42:
+    depends_on:
+      - core-service-43
+      - broker-43
+  business-service-43:
+    depends_on:
+      - core-service-44
+      - broker-44
+  business-service-44:
+    depends_on:
+      - core-service-45
+      - broker-45
+  business-service-45:
+    depends_on:
+      - core-service-46
+      - broker-46
+  business-service-46:
+    depends_on:
+      - core-service-47
+      - broker-47
+  business-service-47:
+    depends_on:
+      - core-service-48
+      - broker-48
+  business-service-48:
+    depends_on:
+      - core-service-49
+      - broker-49
+  business-service-49:
+    depends_on:
+      - core-service-50
+      - broker-50
+  business-service-50:
+    depends_on:
+      - core-service-51
+      - broker-1
+  business-service-51:
+    depends_on:
+      - core-service-52
+      - broker-2
+  business-service-52:
+    depends_on:
+      - core-service-53
+      - broker-3
+  business-service-53:
+    depends_on:
+      - core-service-54
+      - broker-4
+  business-service-54:
+    depends_on:
+      - core-service-55
+      - broker-5
+  business-service-55:
+    depends_on:
+      - core-service-56
+      - broker-6
+  business-service-56:
+    depends_on:
+      - core-service-57
+      - broker-7
+  business-service-57:
+    depends_on:
+      - core-service-58
+      - broker-8
+  business-service-58:
+    depends_on:
+      - core-service-59
+      - broker-9
+  business-service-59:
+    depends_on:
+      - core-service-60
+      - broker-10
+  business-service-60:
+    depends_on:
+      - core-service-61
+      - broker-11
+  business-service-61:
+    depends_on:
+      - core-service-62
+      - broker-12
+  business-service-62:
+    depends_on:
+      - core-service-63
+      - broker-13
+  business-service-63:
+    depends_on:
+      - core-service-64
+      - broker-14
+  business-service-64:
+    depends_on:
+      - core-service-65
+      - broker-15
+  business-service-65:
+    depends_on:
+      - core-service-66
+      - broker-16
+  business-service-66:
+    depends_on:
+      - core-service-67
+      - broker-17
+  business-service-67:
+    depends_on:
+      - core-service-68
+      - broker-18
+  business-service-68:
+    depends_on:
+      - core-service-69
+      - broker-19
+  business-service-69:
+    depends_on:
+      - core-service-70
+      - broker-20
+  business-service-70:
+    depends_on:
+      - core-service-71
+      - broker-21
+  business-service-71:
+    depends_on:
+      - core-service-72
+      - broker-22
+  business-service-72:
+    depends_on:
+      - core-service-73
+      - broker-23
+  business-service-73:
+    depends_on:
+      - core-service-74
+      - broker-24
+  business-service-74:
+    depends_on:
+      - core-service-75
+      - broker-25
+  business-service-75:
+    depends_on:
+      - core-service-76
+      - broker-26
+  business-service-76:
+    depends_on:
+      - core-service-77
+      - broker-27
+  business-service-77:
+    depends_on:
+      - core-service-78
+      - broker-28
+  business-service-78:
+    depends_on:
+      - core-service-79
+      - broker-29
+  business-service-79:
+    depends_on:
+      - core-service-80
+      - broker-30
+  business-service-80:
+    depends_on:
+      - core-service-81
+      - broker-31
+  business-service-81:
+    depends_on:
+      - core-service-82
+      - broker-32
+  business-service-82:
+    depends_on:
+      - core-service-83
+      - broker-33
+  business-service-83:
+    depends_on:
+      - core-service-84
+      - broker-34
+  business-service-84:
+    depends_on:
+      - core-service-85
+      - broker-35
+  business-service-85:
+    depends_on:
+      - core-service-86
+      - broker-36
+  business-service-86:
+    depends_on:
+      - core-service-87
+      - broker-37
+  business-service-87:
+    depends_on:
+      - core-service-88
+      - broker-38
+  business-service-88:
+    depends_on:
+      - core-service-89
+      - broker-39
+  business-service-89:
+    depends_on:
+      - core-service-90
+      - broker-40
+  business-service-90:
+    depends_on:
+      - core-service-91
+      - broker-41
+  business-service-91:
+    depends_on:
+      - core-service-92
+      - broker-42
+  business-service-92:
+    depends_on:
+      - core-service-93
+      - broker-43
+  business-service-93:
+    depends_on:
+      - core-service-94
+      - broker-44
+  business-service-94:
+    depends_on:
+      - core-service-95
+      - broker-45
+  business-service-95:
+    depends_on:
+      - core-service-96
+      - broker-46
+  business-service-96:
+    depends_on:
+      - core-service-97
+      - broker-47
+  business-service-97:
+    depends_on:
+      - core-service-98
+      - broker-48
+  business-service-98:
+    depends_on:
+      - core-service-99
+      - broker-49
+  business-service-99:
+    depends_on:
+      - core-service-100
+      - broker-50
+  business-service-100:
+    depends_on:
+      - core-service-101
+      - broker-1
+  business-service-101:
+    depends_on:
+      - core-service-102
+      - broker-2
+  business-service-102:
+    depends_on:
+      - core-service-103
+      - broker-3
+  business-service-103:
+    depends_on:
+      - core-service-104
+      - broker-4
+  business-service-104:
+    depends_on:
+      - core-service-105
+      - broker-5
+  business-service-105:
+    depends_on:
+      - core-service-106
+      - broker-6
+  business-service-106:
+    depends_on:
+      - core-service-107
+      - broker-7
+  business-service-107:
+    depends_on:
+      - core-service-108
+      - broker-8
+  business-service-108:
+    depends_on:
+      - core-service-109
+      - broker-9
+  business-service-109:
+    depends_on:
+      - core-service-110
+      - broker-10
+  business-service-110:
+    depends_on:
+      - core-service-111
+      - broker-11
+  business-service-111:
+    depends_on:
+      - core-service-112
+      - broker-12
+  business-service-112:
+    depends_on:
+      - core-service-113
+      - broker-13
+  business-service-113:
+    depends_on:
+      - core-service-114
+      - broker-14
+  business-service-114:
+    depends_on:
+      - core-service-115
+      - broker-15
+  business-service-115:
+    depends_on:
+      - core-service-116
+      - broker-16
+  business-service-116:
+    depends_on:
+      - core-service-117
+      - broker-17
+  business-service-117:
+    depends_on:
+      - core-service-118
+      - broker-18
+  business-service-118:
+    depends_on:
+      - core-service-119
+      - broker-19
+  business-service-119:
+    depends_on:
+      - core-service-120
+      - broker-20
+  business-service-120:
+    depends_on:
+      - core-service-121
+      - broker-21
+  business-service-121:
+    depends_on:
+      - core-service-122
+      - broker-22
+  business-service-122:
+    depends_on:
+      - core-service-123
+      - broker-23
+  business-service-123:
+    depends_on:
+      - core-service-124
+      - broker-24
+  business-service-124:
+    depends_on:
+      - core-service-125
+      - broker-25
+  business-service-125:
+    depends_on:
+      - core-service-126
+      - broker-26
+  business-service-126:
+    depends_on:
+      - core-service-127
+      - broker-27
+  business-service-127:
+    depends_on:
+      - core-service-128
+      - broker-28
+  business-service-128:
+    depends_on:
+      - core-service-129
+      - broker-29
+  business-service-129:
+    depends_on:
+      - core-service-130
+      - broker-30
+  business-service-130:
+    depends_on:
+      - core-service-131
+      - broker-31
+  business-service-131:
+    depends_on:
+      - core-service-132
+      - broker-32
+  business-service-132:
+    depends_on:
+      - core-service-133
+      - broker-33
+  business-service-133:
+    depends_on:
+      - core-service-134
+      - broker-34
+  business-service-134:
+    depends_on:
+      - core-service-135
+      - broker-35
+  business-service-135:
+    depends_on:
+      - core-service-136
+      - broker-36
+  business-service-136:
+    depends_on:
+      - core-service-137
+      - broker-37
+  business-service-137:
+    depends_on:
+      - core-service-138
+      - broker-38
+  business-service-138:
+    depends_on:
+      - core-service-139
+      - broker-39
+  business-service-139:
+    depends_on:
+      - core-service-140
+      - broker-40
+  business-service-140:
+    depends_on:
+      - core-service-141
+      - broker-41
+  business-service-141:
+    depends_on:
+      - core-service-142
+      - broker-42
+  business-service-142:
+    depends_on:
+      - core-service-143
+      - broker-43
+  business-service-143:
+    depends_on:
+      - core-service-144
+      - broker-44
+  business-service-144:
+    depends_on:
+      - core-service-145
+      - broker-45
+  business-service-145:
+    depends_on:
+      - core-service-146
+      - broker-46
+  business-service-146:
+    depends_on:
+      - core-service-147
+      - broker-47
+  business-service-147:
+    depends_on:
+      - core-service-148
+      - broker-48
+  business-service-148:
+    depends_on:
+      - core-service-149
+      - broker-49
+  business-service-149:
+    depends_on:
+      - core-service-150
+      - broker-50
+  business-service-150:
+    depends_on:
+      - core-service-151
+      - broker-1
+  business-service-151:
+    depends_on:
+      - core-service-152
+      - broker-2
+  business-service-152:
+    depends_on:
+      - core-service-153
+      - broker-3
+  business-service-153:
+    depends_on:
+      - core-service-154
+      - broker-4
+  business-service-154:
+    depends_on:
+      - core-service-155
+      - broker-5
+  business-service-155:
+    depends_on:
+      - core-service-156
+      - broker-6
+  business-service-156:
+    depends_on:
+      - core-service-157
+      - broker-7
+  business-service-157:
+    depends_on:
+      - core-service-158
+      - broker-8
+  business-service-158:
+    depends_on:
+      - core-service-159
+      - broker-9
+  business-service-159:
+    depends_on:
+      - core-service-160
+      - broker-10
+  business-service-160:
+    depends_on:
+      - core-service-161
+      - broker-11
+  business-service-161:
+    depends_on:
+      - core-service-162
+      - broker-12
+  business-service-162:
+    depends_on:
+      - core-service-163
+      - broker-13
+  business-service-163:
+    depends_on:
+      - core-service-164
+      - broker-14
+  business-service-164:
+    depends_on:
+      - core-service-165
+      - broker-15
+  business-service-165:
+    depends_on:
+      - core-service-166
+      - broker-16
+  business-service-166:
+    depends_on:
+      - core-service-167
+      - broker-17
+  business-service-167:
+    depends_on:
+      - core-service-168
+      - broker-18
+  business-service-168:
+    depends_on:
+      - core-service-169
+      - broker-19
+  business-service-169:
+    depends_on:
+      - core-service-170
+      - broker-20
+  business-service-170:
+    depends_on:
+      - core-service-171
+      - broker-21
+  business-service-171:
+    depends_on:
+      - core-service-172
+      - broker-22
+  business-service-172:
+    depends_on:
+      - core-service-173
+      - broker-23
+  business-service-173:
+    depends_on:
+      - core-service-174
+      - broker-24
+  business-service-174:
+    depends_on:
+      - core-service-175
+      - broker-25
+  business-service-175:
+    depends_on:
+      - core-service-176
+      - broker-26
+  business-service-176:
+    depends_on:
+      - core-service-177
+      - broker-27
+  business-service-177:
+    depends_on:
+      - core-service-178
+      - broker-28
+  business-service-178:
+    depends_on:
+      - core-service-179
+      - broker-29
+  business-service-179:
+    depends_on:
+      - core-service-180
+      - broker-30
+  business-service-180:
+    depends_on:
+      - core-service-181
+      - broker-31
+  business-service-181:
+    depends_on:
+      - core-service-182
+      - broker-32
+  business-service-182:
+    depends_on:
+      - core-service-183
+      - broker-33
+  business-service-183:
+    depends_on:
+      - core-service-184
+      - broker-34
+  business-service-184:
+    depends_on:
+      - core-service-185
+      - broker-35
+  business-service-185:
+    depends_on:
+      - core-service-186
+      - broker-36
+  business-service-186:
+    depends_on:
+      - core-service-187
+      - broker-37
+  business-service-187:
+    depends_on:
+      - core-service-188
+      - broker-38
+  business-service-188:
+    depends_on:
+      - core-service-189
+      - broker-39
+  business-service-189:
+    depends_on:
+      - core-service-190
+      - broker-40
+  business-service-190:
+    depends_on:
+      - core-service-191
+      - broker-41
+  business-service-191:
+    depends_on:
+      - core-service-192
+      - broker-42
+  business-service-192:
+    depends_on:
+      - core-service-193
+      - broker-43
+  business-service-193:
+    depends_on:
+      - core-service-194
+      - broker-44
+  business-service-194:
+    depends_on:
+      - core-service-195
+      - broker-45
+  business-service-195:
+    depends_on:
+      - core-service-196
+      - broker-46
+  business-service-196:
+    depends_on:
+      - core-service-197
+      - broker-47
+  business-service-197:
+    depends_on:
+      - core-service-198
+      - broker-48
+  business-service-198:
+    depends_on:
+      - core-service-199
+      - broker-49
+  business-service-199:
+    depends_on:
+      - core-service-200
+      - broker-50
+  business-service-200:
+    depends_on:
+      - core-service-1
+      - broker-1
+  business-service-201:
+    depends_on:
+      - core-service-2
+      - broker-2
+  business-service-202:
+    depends_on:
+      - core-service-3
+      - broker-3
+  business-service-203:
+    depends_on:
+      - core-service-4
+      - broker-4
+  business-service-204:
+    depends_on:
+      - core-service-5
+      - broker-5
+  business-service-205:
+    depends_on:
+      - core-service-6
+      - broker-6
+  business-service-206:
+    depends_on:
+      - core-service-7
+      - broker-7
+  business-service-207:
+    depends_on:
+      - core-service-8
+      - broker-8
+  business-service-208:
+    depends_on:
+      - core-service-9
+      - broker-9
+  business-service-209:
+    depends_on:
+      - core-service-10
+      - broker-10
+  business-service-210:
+    depends_on:
+      - core-service-11
+      - broker-11
+  business-service-211:
+    depends_on:
+      - core-service-12
+      - broker-12
+  business-service-212:
+    depends_on:
+      - core-service-13
+      - broker-13
+  business-service-213:
+    depends_on:
+      - core-service-14
+      - broker-14
+  business-service-214:
+    depends_on:
+      - core-service-15
+      - broker-15
+  business-service-215:
+    depends_on:
+      - core-service-16
+      - broker-16
+  business-service-216:
+    depends_on:
+      - core-service-17
+      - broker-17
+  business-service-217:
+    depends_on:
+      - core-service-18
+      - broker-18
+  business-service-218:
+    depends_on:
+      - core-service-19
+      - broker-19
+  business-service-219:
+    depends_on:
+      - core-service-20
+      - broker-20
+  business-service-220:
+    depends_on:
+      - core-service-21
+      - broker-21
+  business-service-221:
+    depends_on:
+      - core-service-22
+      - broker-22
+  business-service-222:
+    depends_on:
+      - core-service-23
+      - broker-23
+  business-service-223:
+    depends_on:
+      - core-service-24
+      - broker-24
+  business-service-224:
+    depends_on:
+      - core-service-25
+      - broker-25
+  business-service-225:
+    depends_on:
+      - core-service-26
+      - broker-26
+  business-service-226:
+    depends_on:
+      - core-service-27
+      - broker-27
+  business-service-227:
+    depends_on:
+      - core-service-28
+      - broker-28
+  business-service-228:
+    depends_on:
+      - core-service-29
+      - broker-29
+  business-service-229:
+    depends_on:
+      - core-service-30
+      - broker-30
+  business-service-230:
+    depends_on:
+      - core-service-31
+      - broker-31
+  business-service-231:
+    depends_on:
+      - core-service-32
+      - broker-32
+  business-service-232:
+    depends_on:
+      - core-service-33
+      - broker-33
+  business-service-233:
+    depends_on:
+      - core-service-34
+      - broker-34
+  business-service-234:
+    depends_on:
+      - core-service-35
+      - broker-35
+  business-service-235:
+    depends_on:
+      - core-service-36
+      - broker-36
+  business-service-236:
+    depends_on:
+      - core-service-37
+      - broker-37
+  business-service-237:
+    depends_on:
+      - core-service-38
+      - broker-38
+  business-service-238:
+    depends_on:
+      - core-service-39
+      - broker-39
+  business-service-239:
+    depends_on:
+      - core-service-40
+      - broker-40
+  business-service-240:
+    depends_on:
+      - core-service-41
+      - broker-41
+  business-service-241:
+    depends_on:
+      - core-service-42
+      - broker-42
+  business-service-242:
+    depends_on:
+      - core-service-43
+      - broker-43
+  business-service-243:
+    depends_on:
+      - core-service-44
+      - broker-44
+  business-service-244:
+    depends_on:
+      - core-service-45
+      - broker-45
+  business-service-245:
+    depends_on:
+      - core-service-46
+      - broker-46
+  business-service-246:
+    depends_on:
+      - core-service-47
+      - broker-47
+  business-service-247:
+    depends_on:
+      - core-service-48
+      - broker-48
+  business-service-248:
+    depends_on:
+      - core-service-49
+      - broker-49
+  business-service-249:
+    depends_on:
+      - core-service-50
+      - broker-50
+  business-service-250:
+    depends_on:
+      - core-service-51
+      - broker-1
+  api-gateway-1:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-2:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-3:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-4:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-5:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-6:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-7:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-8:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-9:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-10:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-11:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-12:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-13:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-14:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-15:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-16:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-17:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-18:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-19:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-20:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-21:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-22:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-23:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-24:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-25:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-26:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-27:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-28:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-29:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-30:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-31:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-32:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-33:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-34:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-35:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-36:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-37:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-38:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-39:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-40:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-41:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-42:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-43:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-44:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-45:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-46:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-47:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-48:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-49:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  api-gateway-50:
+    depends_on:
+      - auth-service-1
+      - auth-service-2
+      - auth-service-3
+      - auth-service-4
+      - auth-service-5
+      - auth-service-6
+      - auth-service-7
+      - auth-service-8
+      - auth-service-9
+      - auth-service-10
+      - auth-service-11
+      - auth-service-12
+      - auth-service-13
+      - auth-service-14
+      - auth-service-15
+      - auth-service-16
+      - auth-service-17
+      - auth-service-18
+      - auth-service-19
+      - auth-service-20
+      - auth-service-21
+      - auth-service-22
+      - auth-service-23
+      - auth-service-24
+      - auth-service-25
+      - auth-service-26
+      - auth-service-27
+      - auth-service-28
+      - auth-service-29
+      - auth-service-30
+      - auth-service-31
+      - auth-service-32
+      - auth-service-33
+      - auth-service-34
+      - auth-service-35
+      - auth-service-36
+      - auth-service-37
+      - auth-service-38
+      - auth-service-39
+      - auth-service-40
+      - auth-service-41
+      - auth-service-42
+      - auth-service-43
+      - auth-service-44
+      - auth-service-45
+      - auth-service-46
+      - auth-service-47
+      - auth-service-48
+      - auth-service-49
+      - auth-service-50
+      - auth-service-51
+      - auth-service-52
+      - auth-service-53
+      - auth-service-54
+      - auth-service-55
+      - auth-service-56
+      - auth-service-57
+      - auth-service-58
+      - auth-service-59
+      - auth-service-60
+      - auth-service-61
+      - auth-service-62
+      - auth-service-63
+      - auth-service-64
+      - auth-service-65
+      - auth-service-66
+      - auth-service-67
+      - auth-service-68
+      - auth-service-69
+      - auth-service-70
+      - auth-service-71
+      - auth-service-72
+      - auth-service-73
+      - auth-service-74
+      - auth-service-75
+      - auth-service-76
+      - auth-service-77
+      - auth-service-78
+      - auth-service-79
+      - auth-service-80
+      - auth-service-81
+      - auth-service-82
+      - auth-service-83
+      - auth-service-84
+      - auth-service-85
+      - auth-service-86
+      - auth-service-87
+      - auth-service-88
+      - auth-service-89
+      - auth-service-90
+      - auth-service-91
+      - auth-service-92
+      - auth-service-93
+      - auth-service-94
+      - auth-service-95
+      - auth-service-96
+      - auth-service-97
+      - auth-service-98
+      - auth-service-99
+      - auth-service-100
+      - core-service-1
+  frontend-1:
+    depends_on:
+      - api-gateway-2
+  frontend-2:
+    depends_on:
+      - api-gateway-3
+  frontend-3:
+    depends_on:
+      - api-gateway-4
+  frontend-4:
+    depends_on:
+      - api-gateway-5
+  frontend-5:
+    depends_on:
+      - api-gateway-6
+  frontend-6:
+    depends_on:
+      - api-gateway-7
+  frontend-7:
+    depends_on:
+      - api-gateway-8
+  frontend-8:
+    depends_on:
+      - api-gateway-9
+  frontend-9:
+    depends_on:
+      - api-gateway-10
+  frontend-10:
+    depends_on:
+      - api-gateway-11
+  frontend-11:
+    depends_on:
+      - api-gateway-12
+  frontend-12:
+    depends_on:
+      - api-gateway-13
+  frontend-13:
+    depends_on:
+      - api-gateway-14
+  frontend-14:
+    depends_on:
+      - api-gateway-15
+  frontend-15:
+    depends_on:
+      - api-gateway-16
+  frontend-16:
+    depends_on:
+      - api-gateway-17
+  frontend-17:
+    depends_on:
+      - api-gateway-18
+  frontend-18:
+    depends_on:
+      - api-gateway-19
+  frontend-19:
+    depends_on:
+      - api-gateway-20
+  frontend-20:
+    depends_on:
+      - api-gateway-21
+  frontend-21:
+    depends_on:
+      - api-gateway-22
+  frontend-22:
+    depends_on:
+      - api-gateway-23
+  frontend-23:
+    depends_on:
+      - api-gateway-24
+  frontend-24:
+    depends_on:
+      - api-gateway-25
+  frontend-25:
+    depends_on:
+      - api-gateway-26
+  frontend-26:
+    depends_on:
+      - api-gateway-27
+  frontend-27:
+    depends_on:
+      - api-gateway-28
+  frontend-28:
+    depends_on:
+      - api-gateway-29
+  frontend-29:
+    depends_on:
+      - api-gateway-30
+  frontend-30:
+    depends_on:
+      - api-gateway-31
+  frontend-31:
+    depends_on:
+      - api-gateway-32
+  frontend-32:
+    depends_on:
+      - api-gateway-33
+  frontend-33:
+    depends_on:
+      - api-gateway-34
+  frontend-34:
+    depends_on:
+      - api-gateway-35
+  frontend-35:
+    depends_on:
+      - api-gateway-36
+  frontend-36:
+    depends_on:
+      - api-gateway-37
+  frontend-37:
+    depends_on:
+      - api-gateway-38
+  frontend-38:
+    depends_on:
+      - api-gateway-39
+  frontend-39:
+    depends_on:
+      - api-gateway-40
+  frontend-40:
+    depends_on:
+      - api-gateway-41
+  frontend-41:
+    depends_on:
+      - api-gateway-42
+  frontend-42:
+    depends_on:
+      - api-gateway-43
+  frontend-43:
+    depends_on:
+      - api-gateway-44
+  frontend-44:
+    depends_on:
+      - api-gateway-45
+  frontend-45:
+    depends_on:
+      - api-gateway-46
+  frontend-46:
+    depends_on:
+      - api-gateway-47
+  frontend-47:
+    depends_on:
+      - api-gateway-48
+  frontend-48:
+    depends_on:
+      - api-gateway-49
+  frontend-49:
+    depends_on:
+      - api-gateway-50
+  frontend-50:
+    depends_on:
+      - api-gateway-1
+  frontend-51:
+    depends_on:
+      - api-gateway-2
+  frontend-52:
+    depends_on:
+      - api-gateway-3
+  frontend-53:
+    depends_on:
+      - api-gateway-4
+  frontend-54:
+    depends_on:
+      - api-gateway-5
+  frontend-55:
+    depends_on:
+      - api-gateway-6
+  frontend-56:
+    depends_on:
+      - api-gateway-7
+  frontend-57:
+    depends_on:
+      - api-gateway-8
+  frontend-58:
+    depends_on:
+      - api-gateway-9
+  frontend-59:
+    depends_on:
+      - api-gateway-10
+  frontend-60:
+    depends_on:
+      - api-gateway-11
+  frontend-61:
+    depends_on:
+      - api-gateway-12
+  frontend-62:
+    depends_on:
+      - api-gateway-13
+  frontend-63:
+    depends_on:
+      - api-gateway-14
+  frontend-64:
+    depends_on:
+      - api-gateway-15
+  frontend-65:
+    depends_on:
+      - api-gateway-16
+  frontend-66:
+    depends_on:
+      - api-gateway-17
+  frontend-67:
+    depends_on:
+      - api-gateway-18
+  frontend-68:
+    depends_on:
+      - api-gateway-19
+  frontend-69:
+    depends_on:
+      - api-gateway-20
+  frontend-70:
+    depends_on:
+      - api-gateway-21
+  frontend-71:
+    depends_on:
+      - api-gateway-22
+  frontend-72:
+    depends_on:
+      - api-gateway-23
+  frontend-73:
+    depends_on:
+      - api-gateway-24
+  frontend-74:
+    depends_on:
+      - api-gateway-25
+  frontend-75:
+    depends_on:
+      - api-gateway-26
+  frontend-76:
+    depends_on:
+      - api-gateway-27
+  frontend-77:
+    depends_on:
+      - api-gateway-28
+  frontend-78:
+    depends_on:
+      - api-gateway-29
+  frontend-79:
+    depends_on:
+      - api-gateway-30
+  frontend-80:
+    depends_on:
+      - api-gateway-31
+  frontend-81:
+    depends_on:
+      - api-gateway-32
+  frontend-82:
+    depends_on:
+      - api-gateway-33
+  frontend-83:
+    depends_on:
+      - api-gateway-34
+  frontend-84:
+    depends_on:
+      - api-gateway-35
+  frontend-85:
+    depends_on:
+      - api-gateway-36
+  frontend-86:
+    depends_on:
+      - api-gateway-37
+  frontend-87:
+    depends_on:
+      - api-gateway-38
+  frontend-88:
+    depends_on:
+      - api-gateway-39
+  frontend-89:
+    depends_on:
+      - api-gateway-40
+  frontend-90:
+    depends_on:
+      - api-gateway-41
+  frontend-91:
+    depends_on:
+      - api-gateway-42
+  frontend-92:
+    depends_on:
+      - api-gateway-43
+  frontend-93:
+    depends_on:
+      - api-gateway-44
+  frontend-94:
+    depends_on:
+      - api-gateway-45
+  frontend-95:
+    depends_on:
+      - api-gateway-46
+  frontend-96:
+    depends_on:
+      - api-gateway-47
+  frontend-97:
+    depends_on:
+      - api-gateway-48
+  frontend-98:
+    depends_on:
+      - api-gateway-49
+  frontend-99:
+    depends_on:
+      - api-gateway-50
+  frontend-100:
+    depends_on:
+      - api-gateway-1

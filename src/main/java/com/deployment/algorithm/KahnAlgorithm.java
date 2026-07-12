@@ -80,6 +80,43 @@ public class KahnAlgorithm {
         memoryUsed = memoryAfter - memoryBefore;
     }
 
+        /**
+     * Reine Ausführung für Benchmarking (JMH)
+     * OHNE Memory-Messung und OHNE runtime.gc()
+     * damit die Laufzeitmessung nicht verfälscht wird
+     */
+    public void executeForBenchmark(Graph graph) {
+
+        Map<String, Integer> inDegree =
+            new HashMap<>(graph.getInDegree());
+
+        Queue<String> queue = new LinkedList<>();
+        for (String node : graph.getNodes()) {
+            if (inDegree.get(node) == 0) {
+                queue.add(node);
+            }
+        }
+
+        while (!queue.isEmpty()) {
+            String current = queue.poll();
+            deploymentOrder.add(current);
+
+            for (String neighbor : 
+                    graph.getNeighbors(current)) {
+                inDegree.put(neighbor,
+                    inDegree.get(neighbor) - 1);
+                if (inDegree.get(neighbor) == 0) {
+                    queue.add(neighbor);
+                }
+            }
+        }
+
+        if (deploymentOrder.size() != 
+                graph.getNodeCount()) {
+            hasCycle = true;
+        }
+    }
+
     // Getter
     public List<String> getDeploymentOrder() {
         return deploymentOrder;
