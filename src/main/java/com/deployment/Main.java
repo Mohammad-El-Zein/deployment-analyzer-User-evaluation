@@ -21,8 +21,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String filePath =
-            "src/main/resources/examples/cycle-protected.yaml";
+        String filePath ="src/main/resources/examples/medium.yaml"; // muss angepasst werden, je nachdem, welche Datei analysiert werden soll
 
         ResultPrinter printer = new ResultPrinter();
 

@@ -1,0 +1,23 @@
+version: "3"
+services:
+  frontend:
+    image: frontend:latest
+    depends_on:
+      - api-gateway
+  api-gateway:
+    image: api-gateway:latest
+    depends_on:
+      - auth-service
+    labels:
+      - "deployment-analyzer.protected-dependencies=auth-service"
+  auth-service:
+    image: auth-service:latest
+    depends_on:
+      - database
+      - redis
+  database:
+    image: postgres:15
+    depends_on: []
+  redis:
+    image: redis:7
+    depends_on: []

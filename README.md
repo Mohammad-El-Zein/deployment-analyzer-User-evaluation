@@ -19,7 +19,7 @@
 
 ## Beschreibung
 
-Dieses Tool analysiert Microservice-Abhängigkeiten automatisch und berechnet die optimale Deployment-Reihenfolge mithilfe von Graphalgorithmen. Der Benutzer definiert nur die Abhängigkeiten zwischen den Services in einer YAML-Datei – die korrekte Reihenfolge, Zyklenerkennung und Parallelisierungsoptimierung übernimmt das System vollautomatisch.
+Dieses Tool analysiert Microservice-Abhängigkeiten automatisch und berechnet die optimale Deployment-Reihenfolge mithilfe von Graphalgorithmen. Der Benutzer definiert die Abhängigkeiten zwischen den Services entweder direkt in einer YAML-Datei oder – für den Praxiseinsatz – automatisch ableitbar aus bereits bestehenden Docker-Compose- oder Kubernetes-Manifesten. Die korrekte Reihenfolge, Zyklenerkennung und Parallelisierungsoptimierung übernimmt das System vollautomatisch.
 
 ### Motivation
 
@@ -43,38 +43,45 @@ Das Deployment von Microservices in modernen Cloud-Umgebungen ist fehleranfälli
 - Optimierte kontrollierte Parallelisierung (Start-Schichten)
 - Transparenz (White Box) – welcher Algorithmus läuft?
 - Nachgewiesene Skalierbarkeit bei über 2000 Services
-- Experimenteller Vergleich der Algorithmen mit wissenschaftlichem Benchmarking (JMH java Microbenchmark HArness)
+- Experimenteller Vergleich der Algorithmen mit wissenschaftlichem Benchmarking (JMH – Java Microbenchmark Harness)
 - Berücksichtigung geschützter (nicht löschbarer) Abhängigkeiten bei der Zyklusauflösung
 - Maschinenlesbarer Output (JSON) und visuelle Graph-Darstellung (SVG)
+- Automatische Ableitung des Abhängigkeitsgraphen aus bestehenden Docker-Compose- oder Kubernetes-Manifesten (regelbasiert, ohne LLM-Einsatz)
 
 ### Ablauf
 
 ```
-YAML Datei (nur Abhängigkeiten angeben)
-        ↓
-Graph aufbauen
-        ↓
-Kahn oder DFS → Reihenfolge berechnen
-        ↓
-Zyklus gefunden?
-    ↙         ↘
-  JA           NEIN
-   ↓               ↓
-Tarjan          Level-BFS
-→ Zyklus        → Parallele
-  lokalisieren    Gruppen
-   ↓                ↓
-Feedback Arc Set   SVG-Visualisierung
-(respektiert          +
-geschützte Kanten)  JSON-Export
-   ↓
-Lösbar?
- ↙      ↘
-JA      NEIN
- ↓        ↓
-Level-BFS  Abbruch mit
-+ SVG      Fehlermeldung
-+ JSON
+Docker Compose /            Eigene YAML-Datei
+Kubernetes Manifeste              |
+        ↓                         |
+UniversalYamlParser                |
+(automatische Ableitung)          |
+        ↓                         |
+        └──────────┬──────────────┘
+                   ↓
+            Graph aufbauen
+                   ↓
+     Kahn oder DFS → Reihenfolge berechnen
+                   ↓
+            Zyklus gefunden?
+             ↙            ↘
+           JA              NEIN
+            ↓                 ↓
+        Tarjan            Level-BFS
+      → Zyklus            → Parallele
+        lokalisieren        Gruppen
+            ↓                  ↓
+     Feedback Arc Set   SVG-Visualisierung
+     (respektiert           +
+      geschützte Kanten)  JSON-Export
+            ↓
+         Lösbar?
+        ↙       ↘
+      JA        NEIN
+       ↓          ↓
+   Level-BFS   Abbruch mit
+   + SVG       Fehlermeldung
+   + JSON
 ```
 
 ---
@@ -120,9 +127,82 @@ mvn clean compile
 
 ## Verwendung
 
-Es gibt vier unabhängige Skripte für unterschiedliche Anwendungsfälle. Alle liegen im Hauptverzeichnis und benötigen keine weiteren manuellen Schritte.
+Es gibt mehrere unabhängige Skripte für unterschiedliche Anwendungsfälle. Alle liegen im Hauptverzeichnis und benötigen keine weiteren manuellen Schritte.
 
-### 1. Nur die Programm-Demo ausführen (schnell, keine Benchmarks)
+### 1. Deployment-Konfiguration erstellen
+
+Es gibt zwei Wege, die Abhängigkeiten für den Deployment Analyzer bereitzustellen:
+
+**Option A – Manuell schreiben:**
+
+Eine eigene YAML-Datei im internen Format erstellen (siehe Abschnitt "YAML Format" weiter unten).
+
+**Option B – Automatisch aus Docker Compose oder Kubernetes ableiten:**
+
+Wenn bereits Docker-Compose- oder Kubernetes-Dateien existieren(muss das gibt in jedes echtes deployment), muss nichts manuell geschrieben werden. Es reicht, die vorhandenen Dateien in den passenden Ordner zu legen:
+
+- Docker Compose Dateien → `src/main/resources/examples/docker-manifests/`
+- Kubernetes Deployment-Dateien → `src/main/resources/examples/kubernetes-manifests/`
+
+#### Automatische Ableitung aus Docker Compose
+
+```bash
+convert_docker.bat
+```
+
+Liest alle Dateien aus `src/main/resources/examples/docker-manifests/` und erzeugt daraus automatisch `converted-docker.yaml` im internen Format.
+
+**Hinweis:** Da `depends_on` bereits ein natives Docker-Compose-Feld ist, muss hier **nichts** zusätzlich geschrieben werden – die bestehende Datei wird einfach eingelesen. Nur wenn eine Abhängigkeit als geschützt markiert werden soll (`protected_dependencies`), muss eine zusätzliche Zeile (in Haupt docker Datei) in Form eines Labels ergänzt werden:
+
+```yaml
+api-gateway:
+    image: api-gateway:latest
+    depends_on:
+      - auth-service
+    labels:  // nur dieses Zeile
+      - "deployment-analyzer.protected-dependencies=auth-service"
+```
+
+#### Automatische Ableitung aus Kubernetes
+
+```bash
+convert_kubernetes.bat
+```
+
+Liest alle Dateien aus `src/main/resources/examples/kubernetes-manifests/` und erzeugt daraus automatisch `converted-kubernetes.yaml` im internen Format.
+
+**Hinweis:** Kubernetes kennt kein natives Abhängigkeits-Konzept. Daher muss hier – im Gegensatz zu Docker Compose – eine Annotation ergänzt werden, die angibt, von welchen Services der jeweilige Service abhängt:
+
+```yaml
+metadata:
+  name: auth-service
+  annotations:
+    deployment-analyzer/depends-on: "database,redis"
+```
+
+Soll eine dieser Abhängigkeiten zusätzlich geschützt werden, wird eine weitere Annotation ergänzt:
+
+```yaml
+metadata:
+  name: auth-service
+  annotations:
+    deployment-analyzer/depends-on: "database,redis"
+    deployment-analyzer/protected-dependencies: "database"
+```
+
+#### Ergebnis nutzen
+
+Nach der Konvertierung den erzeugten Dateinamen in `Main.java` eintragen (Zeile 24):
+
+```java
+String filePath = "converted-docker.yaml";
+// oder
+String filePath = "converted-kubernetes.yaml";
+```
+
+---
+
+### 2. Nur die Programm-Demo ausführen (schnell, keine Benchmarks)
 
 Zeigt Graphaufbau, Deployment-Reihenfolge, Zyklenbehandlung, SVG-Visualisierung und JSON-Export für die in `Main.java` konfigurierte YAML-Datei.
 
@@ -134,7 +214,7 @@ Erzeugt:
 - `dependency_graph.svg` – visuelle Darstellung des Abhängigkeitsgraphen
 - `deployment_result.json` – maschinenlesbares Ergebnis (Reihenfolge, Parallelgruppen, Zyklen)
 
-### 2. Nur den isolierten Algorithmus-Vergleich (Kahn vs. DFS)
+### 3. Nur den isolierten Algorithmus-Vergleich (Kahn vs. DFS)
 
 Misst ausschließlich die Laufzeit der Sortieralgorithmen selbst, ohne YAML-Parsing/Graph-Konstruktion.
 
@@ -144,7 +224,7 @@ run_algorithm_benchmark.bat
 
 Dauer: ca. 3–5 Minuten. Erzeugt `all_raw_results.json`, `summary_results.csv`, `boxplot_algorithm.png`, `boxplot_algorithm_log.png`.
 
-### 3. Nur die Gesamtprogramm-Messung
+### 4. Nur die Gesamtprogramm-Messung
 
 Misst die komplette Laufzeit (YAML lesen + Graph aufbauen + Sortieren + Level-BFS), einmal mit Kahn, einmal mit DFS als Sortieralgorithmus.
 
@@ -154,7 +234,7 @@ run_full_program_benchmark.bat
 
 Dauer: ca. 3–5 Minuten. Erzeugt `all_raw_results.json`, `summary_results.csv`, `boxplot_full_program_log.png`.
 
-### 4. Komplette Evaluation (alles zusammen)
+### 5. Komplette Evaluation (alles zusammen)
 
 Führt beide Benchmarks, alle Zusammenfassungen, Boxplots und die Demo automatisch nacheinander aus.
 
@@ -187,6 +267,9 @@ Verfügbare Standarddateien (mit hinterlegten JMH-Referenzwerten):
 // cycle.yaml               → 3 Services mit Zyklus
 // cycle-protected.yaml      → Zyklus mit teilweise geschützten Kanten
 // cycle-unresolvable.yaml   → Zyklus, der wegen geschützter Kanten nicht lösbar ist
+```
+
+Bei eigenen, nicht registrierten YAML-Dateien greift automatisch eine einfache Laufzeitmessung als Fallback (mit entsprechendem Hinweis im Terminal).
 
 ---
 
@@ -214,6 +297,68 @@ services:
 ```
 
 `protected_dependencies` ist optional und markiert essenzielle Abhängigkeiten, die bei der automatischen Zyklusauflösung nicht zur Disposition stehen. Besteht ein Zyklus ausschließlich aus geschützten Kanten, meldet das Programm dies explizit und bricht kontrolliert ab, statt fehlerhaft fortzufahren.
+
+---
+
+## Automatische Graph-Ableitung aus Docker Compose / Kubernetes
+
+Anstatt Abhängigkeiten manuell in einer separaten YAML-Datei zu pflegen, kann der Abhängigkeitsgraph automatisch aus bereits bestehenden Deployment-Manifesten abgeleitet werden. Dies vermeidet doppelte Datenhaltung ("Single Source of Truth") und spart manuelle Arbeit – ohne den Einsatz von LLMs, rein regelbasiert und damit schnell, ressourcenschonend und verlässlich.
+
+### Docker Compose
+
+Docker Compose besitzt mit `depends_on` bereits ein natives Abhängigkeits-Feld – der Benutzer muss dafür **nichts** zusätzlich schreiben:
+
+```yaml
+version: "3"
+services:
+  auth-service:
+    image: auth-service:latest
+    depends_on:
+      - database
+```
+
+Geschützte Abhängigkeiten werden über ein zusätzliches Label markiert (Docker Compose kennt dieses Konzept nicht nativ):
+
+```yaml
+services:
+  api-gateway:
+    image: api-gateway:latest
+    depends_on:
+      - auth-service
+    labels:
+      - "deployment-analyzer.protected-dependencies=auth-service"
+```
+
+### Kubernetes
+
+Kubernetes kennt kein natives Abhängigkeits-Konzept. Abhängigkeiten werden daher explizit über Annotationen angegeben – analog zu `depends_on` in Docker Compose:
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: auth-service
+  annotations:
+    deployment-analyzer/depends-on: "database,redis"
+    deployment-analyzer/protected-dependencies: "database"
+spec:
+  template:
+    spec:
+      containers:
+        - name: auth-service
+          image: auth-service:latest
+```
+
+Jeder Service liegt dabei üblicherweise in einer eigenen Datei (Kubernetes-Konvention) – der `UniversalYamlParser` liest alle Dateien eines Ordners automatisch ein und baut daraus den vollständigen Graphen.
+
+### Erkennungslogik
+
+Der `UniversalYamlParser` erkennt das Format jeder Datei automatisch:
+
+- Enthält die Datei den Schlüssel `services` → Docker Compose Format
+- Enthält die Datei `kind: Deployment` → Kubernetes Format
+
+Beide Formate werden zu derselben internen Abhängigkeitsstruktur zusammengeführt, die anschließend identisch zu einer manuell geschriebenen YAML-Datei weiterverarbeitet wird (Kahn, DFS, Tarjan, Feedback Arc Set, Level-BFS, SVG- und JSON-Export laufen unverändert).
 
 ---
 
@@ -402,7 +547,7 @@ Diese Trennung zeigt: Während bei isolierter Messung klare Laufzeitunterschiede
 
 ### Reproduzierbarkeit
 
-Alle Messungen sind vollautomatisch reproduzierbar über die bereitgestellten `.bat`-Skripte (siehe Abschnitt Verwendung). Es ist keine manuelle Konfiguration über die vier Skripte hinaus notwendig.
+Alle Messungen sind vollautomatisch reproduzierbar über die bereitgestellten `.bat`-Skripte (siehe Abschnitt Verwendung). Es ist keine manuelle Konfiguration über die Skripte hinaus notwendig.
 
 ---
 
@@ -433,30 +578,36 @@ deployment-analyzer/
 │   │   │   ├── Graph.java
 │   │   │   └── Service.java
 │   │   ├── parser/
-│   │   │   └── YamlParser.java
+│   │   │   ├── YamlParser.java
+│   │   │   └── UniversalYamlParser.java    (Docker Compose + Kubernetes)
 │   │   ├── validator/
 │   │   │   └── Validator.java
+│   │   ├── ConvertToInternalFormat.java     (Standalone-Konvertierungstool)
 │   │   ├── GraphGenerator.java
 │   │   ├── Main.java
 │   │   └── ResultPrinter.java
 │   └── resources/examples/
-│       ├── simple.yaml                 (5 Services)
-│       ├── medium.yaml                 (20 Services)
-│       ├── large.yaml                  (50 Services)
-│       ├── xlarge.yaml                 (100 Services)
-│       ├── xxlarge.yaml                (500 Services)
-│       ├── xxxlarge.yaml               (1000 Services)
-│       ├── xxxxlarge.yaml              (2000 Services)
-│       ├── cycle.yaml                  (Zyklus, frei lösbar)
-│       ├── cycle-protected.yaml        (Zyklus, teilweise geschützt)
-│       └── cycle-unresolvable.yaml     (Zyklus, vollständig geschützt)
+│       ├── simple.yaml                     (5 Services)
+│       ├── medium.yaml                     (20 Services)
+│       ├── large.yaml                      (50 Services)
+│       ├── xlarge.yaml                     (100 Services)
+│       ├── xxlarge.yaml                    (500 Services)
+│       ├── xxxlarge.yaml                   (1000 Services)
+│       ├── xxxxlarge.yaml                  (2000 Services)
+│       ├── cycle.yaml                      (Zyklus, frei lösbar)
+│       ├── cycle-protected.yaml            (Zyklus, teilweise geschützt)
+│       ├── cycle-unresolvable.yaml         (Zyklus, vollständig geschützt)
+│       ├── docker-manifests/               (Docker Compose Testdaten)
+│       └── kubernetes-manifests/           (Kubernetes Testdaten)
 ├── create_summary.py
 ├── create_boxplots.py
 ├── run_demo.bat
 ├── run_algorithm_benchmark.bat
 ├── run_full_program_benchmark.bat
 ├── run_evaluation.bat
-├── requirments.txt
+├── convert_docker.bat
+├── convert_kubernetes.bat
+├── requirements.txt
 └── pom.xml
 ```
 
