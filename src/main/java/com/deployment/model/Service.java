@@ -20,15 +20,12 @@ public class Service {
     }
     
     // toString Methode, damit wir den Service einfach als String ausgeben können, 
-    // zb System.out.println(service-a) -> "database" 
-    //du schreibst System.out.println(service-a) aber Java intern macht service-a.toString() und das gibt den Namen zurück
     @Override
     public String toString() {
         return name;
     }
     
     //vergleicht zwei Services, damit wir z.B. in Sets oder Maps Services vergleichen können,
-    //zb service-a.equals(service-b) -> true wenn beide den gleichen Namen haben, sonst false
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;

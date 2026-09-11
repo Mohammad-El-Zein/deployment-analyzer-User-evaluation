@@ -7,9 +7,7 @@ import org.openjdk.jmh.runner.options.OptionsBuilder;
 import org.openjdk.jmh.results.format.ResultFormatType;
 
 /**
- * Fuehrt ALLE Benchmarks (Algorithm + FullProgram)
- * in EINEM Durchlauf aus und exportiert NUR JSON
- * (enthaelt alle Einzelmessungen/rawData).
+ * Fuehrt ALLE Benchmarks (Algorithm + FullProgram).
  *
  * Ausfuehren mit:
  *   java -cp target/benchmarks.jar

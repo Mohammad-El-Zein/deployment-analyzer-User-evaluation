@@ -19,11 +19,6 @@ import java.util.concurrent.TimeUnit;
  * JMH Benchmark für das GESAMTE Programm:
  * YAML einlesen -> Graph aufbauen ->
  * Kahn -> DFS -> Level-BFS
- *
- * Im Gegensatz zu AlgorithmBenchmark, der nur
- * einzelne Algorithmen isoliert misst, misst
- * dieser Benchmark den kompletten End-to-End
- * Ablauf des Programms.
  */
 @BenchmarkMode(Mode.AverageTime)
 @OutputTimeUnit(TimeUnit.MILLISECONDS)
@@ -33,7 +28,7 @@ import java.util.concurrent.TimeUnit;
 @State(Scope.Benchmark)
 public class FullProgramBenchmark {
 
-    @Param({"simple", "medium", "large", "xlarge", "xxlarge", "xxxlarge", "xxxxlarge"})
+    @Param({"simple", "medium", "large", "xlarge", "xxlarge", "xxxlarge", "xxxxlarge", "showcase-10-services"})
     private String graphSize;
 
     private String filePath;
@@ -45,7 +40,8 @@ public class FullProgramBenchmark {
         "xlarge",  "src/main/resources/examples/xlarge.yaml",
         "xxlarge", "src/main/resources/examples/xxlarge.yaml",
         "xxxlarge", "src/main/resources/examples/xxxlarge.yaml",
-        "xxxxlarge", "src/main/resources/examples/xxxxlarge.yaml"   
+        "xxxxlarge", "src/main/resources/examples/xxxxlarge.yaml",
+        "showcase-10-services", "src/main/resources/examples/showcase-10-services.yaml"
     );
 
     @Setup(Level.Trial)

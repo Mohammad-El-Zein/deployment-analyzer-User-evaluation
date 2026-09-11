@@ -4,21 +4,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
- * Zentrale Zuordnung: Label (wie in JMH @Param) 
- * <-> YAML Dateipfad.
- *
- * WICHTIG: Diese Map wird sowohl von den 
- * Benchmark-Klassen (AlgorithmBenchmark, 
- * FullProgramBenchmark) als auch von Main.java 
- * genutzt, damit die CSV-Ergebnisse automatisch 
- * der richtigen YAML-Datei zugeordnet werden können.
- *
- * Neue Testdatei hinzufuegen:
- * 1. Hier einen neuen Eintrag ergaenzen
- * 2. mvn clean package
- * 3. Benchmark einmal ausfuehren (erzeugt CSV-Eintrag)
- * 4. Danach zeigt mvn exec:java automatisch 
- *    die praezisen JMH-Werte fuer diese Datei
+ * Diese Klasse registriert die YAML-Dateien, die fuür die Benchmark-Tests
  */
 public class GraphSizeConfig {
 
@@ -40,10 +26,9 @@ public class GraphSizeConfig {
             "src/main/resources/examples/xxxlarge.yaml");
         LABEL_TO_FILE.put("xxxxlarge",
             "src/main/resources/examples/xxxxlarge.yaml");
+            LABEL_TO_FILE.put("showcase-10-services",
+            "src/main/resources/examples/showcase-10-services.yaml");
 
-        // Neue eigene Datei hier registrieren, z.B.:
-        // LABEL_TO_FILE.put("realworld",
-        //     "src/main/resources/examples/realworld.yaml");
     }
 
     /**

@@ -12,29 +12,6 @@ import java.util.Set;
  * Exportiert den Abhaengigkeitsgraph als
  * Graphviz DOT Datei und rendert daraus
  * automatisch ein SVG Bild.
- *
- * SVG ist vektorbasiert - beim Hineinzoomen
- * bleibt der Text IMMER scharf lesbar,
- * unabhaengig von der Graphgroesse!
- * Tipp: die .svg Datei im Browser oeffnen
- * und mit Strg+Mausrad zoomen.
- *
- * Es wird KEINE Groessenbeschraenkung (size/ratio)
- * gesetzt, da SVG keine feste Papiergroesse
- * braucht - Graphviz waehlt die natuerliche
- * Groesse, im Browser kann in jede Richtung
- * gezoomt/gescrollt werden.
- *
- * Farbcodierung Knoten (nach In-Degree):
- * - Weiss: In-Degree 0 (Basis-Services)
- * - Gruen bis Rot: steigender In-Degree
- *
- * Farbcodierung Kanten:
- * - Schwarz: normale Abhaengigkeit
- * - Rot, dick: geschuetzte Abhaengigkeit
- *   (protected_dependencies)
- * - Grau, gestrichelt: vom Feedback Arc Set
- *   entfernte Kante (Zyklus-Aufloesung)
  */
 public class GraphvizExporter {
 
@@ -61,19 +38,19 @@ public class GraphvizExporter {
 
             writer.write("    legend [shape=none, margin=0, label=<\n");
             writer.write("        <TABLE BORDER=\"1\" CELLBORDER=\"1\" "
-                + "CELLSPACING=\"0\" CELLPADDING=\"4\">\n");
+                    + "CELLSPACING=\"0\" CELLPADDING=\"4\">\n");
             writer.write("        <TR><TD COLSPAN=\"2\"><B>Legende</B></TD></TR>\n");
             writer.write("        <TR><TD BGCOLOR=\"white\">     </TD>"
-                + "<TD ALIGN=\"LEFT\">In-Degree 0 (Basis-Service)</TD></TR>\n");
+                    + "<TD ALIGN=\"LEFT\">In-Degree 0 (Basis-Service)</TD></TR>\n");
             writer.write("        <TR><TD BGCOLOR=\"palegreen\">     </TD>"
-                + "<TD ALIGN=\"LEFT\">In-Degree 1</TD></TR>\n");
+                    + "<TD ALIGN=\"LEFT\">In-Degree 1</TD></TR>\n");
             writer.write("        <TR><TD BGCOLOR=\"gold\">     </TD>"
-                + "<TD ALIGN=\"LEFT\">In-Degree 2</TD></TR>\n");
+                    + "<TD ALIGN=\"LEFT\">In-Degree 2</TD></TR>\n");
             writer.write("        <TR><TD BGCOLOR=\"orange\">     </TD>"
-                + "<TD ALIGN=\"LEFT\">In-Degree 3</TD></TR>\n");
+                    + "<TD ALIGN=\"LEFT\">In-Degree 3</TD></TR>\n");
             writer.write("        <TR><TD BGCOLOR=\"orangered\">     </TD>"
-                + "<TD ALIGN=\"LEFT\">In-Degree 4+</TD></TR>\n");
-            
+                    + "<TD ALIGN=\"LEFT\">In-Degree 4+</TD></TR>\n");
+
             writer.write("        </TABLE>\n");
             writer.write("    >];\n");
             writer.write("\n");
@@ -82,7 +59,7 @@ public class GraphvizExporter {
                 int inDegree = graph.getInDegreeOf(node);
                 String color = getColorForInDegree(inDegree);
                 writer.write("    \"" + node
-                    + "\" [fillcolor=\"" + color + "\"];\n");
+                        + "\" [fillcolor=\"" + color + "\"];\n");
             }
             writer.write("\n");
 
@@ -98,39 +75,39 @@ public class GraphvizExporter {
                     String style;
                     if (isRemoved) {
                         style = " [style=dashed, color=gray, "
-                              + "label=\"entfernt\", fontcolor=gray]";
+                                + "label=\"entfernt\", fontcolor=gray]";
                     } else if (isProtected) {
                         style = " [color=red, penwidth=2.5, "
-                              + "label=\"geschuetzt\", fontcolor=red]";
+                                + "label=\"geschuetzt\", fontcolor=red]";
                     } else {
                         style = "";
                     }
 
                     writer.write("    \"" + node + "\" -> \""
-                        + neighbor + "\"" + style + ";\n");
+                            + neighbor + "\"" + style + ";\n");
                 }
             }
 
             writer.write("}\n");
 
             System.out.println(
-                " DOT Datei geschrieben: " + dotFilePath);
+                    " DOT Datei geschrieben: " + dotFilePath);
 
         } catch (IOException e) {
             System.out.println(
-                " Fehler beim Schreiben der DOT Datei: "
-                + e.getMessage());
+                    " Fehler beim Schreiben der DOT Datei: "
+                            + e.getMessage());
             return;
         }
 
         try {
             ProcessBuilder pb = new ProcessBuilder(
-                "dot", "-Tsvg", dotFilePath, "-o", svgFilePath);
+                    "dot", "-Tsvg", dotFilePath, "-o", svgFilePath);
             pb.redirectErrorStream(true);
             Process process = pb.start();
 
             BufferedReader reader = new BufferedReader(
-                new InputStreamReader(process.getInputStream()));
+                    new InputStreamReader(process.getInputStream()));
             String line;
             StringBuilder output = new StringBuilder();
             while ((line = reader.readLine()) != null) {
@@ -141,23 +118,23 @@ public class GraphvizExporter {
 
             if (exitCode == 0) {
                 System.out.println(
-                    " Graph-Visualisierung erstellt: "
-                    + svgFilePath);
+                        " Graph-Visualisierung erstellt: "
+                                + svgFilePath);
             } else {
                 System.out.println(
-                    " [Hinweis] Graphviz 'dot' Befehl "
-                    + "fehlgeschlagen. Exit Code: " + exitCode);
+                        " [Hinweis] Graphviz 'dot' Befehl "
+                                + "fehlgeschlagen. Exit Code: " + exitCode);
                 System.out.println(
-                    " Graphviz Ausgabe: " + output.toString());
+                        " Graphviz Ausgabe: " + output.toString());
             }
 
         } catch (IOException | InterruptedException e) {
             System.out.println(
-                " [Hinweis] Graphviz 'dot' Befehl nicht "
-                + "verfuegbar: " + e.getMessage());
+                    " [Hinweis] Graphviz 'dot' Befehl nicht "
+                            + "verfuegbar: " + e.getMessage());
             System.out.println(
-                " Installiere Graphviz von "
-                + "https://graphviz.org/download/");
+                    " Installiere Graphviz von "
+                            + "https://graphviz.org/download/");
         }
     }
 

@@ -9,7 +9,6 @@ import java.util.Locale;
 /**
  * Evaluation: Vergleich Kahn vs DFS
  * Jeder Test wird 10 mal wiederholt und wird durchschnittliche Laufzeit und Speicherverbrauch berechnet.
- * Da manchmal Kahn schneller ist, aber am meisten DFS, wird am Ende pro Test ausgegeben, welcher Algorithmus schneller war und welcher weniger Speicher verbraucht hat.
  */
 public class EvaluationRunner {
 

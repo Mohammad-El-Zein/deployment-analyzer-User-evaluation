@@ -70,7 +70,8 @@ def print_and_collect_summary(kahn_data, dfs_data, size_order,
 def main():
 
     size_order = ['simple', 'medium', 'large', 'xlarge',
-                  'xxlarge', 'xxxlarge', 'xxxxlarge']
+              'xxlarge', 'xxxlarge', 'xxxxlarge',
+              'showcase-10-services']
 
     json_file = 'all_raw_results.json'
 

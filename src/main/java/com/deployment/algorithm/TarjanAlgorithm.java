@@ -11,13 +11,13 @@ import com.deployment.model.Graph;
 
 /**
  * Tarjan's Algorithmus
- * Findet alle Strongly Connected Components 
+ * Findet alle Strongly Connected Components
  * Identifiziert genau welche Services einen Zyklus bilden
- */ 
+ */
 public class TarjanAlgorithm {
 
     // Alle gefundenen Zyklen
-    private List<List<String>> cycles;
+    private List<List<String>> sccsWithCycles;
 
     // Laufzeit messen
     private long executionTime;
@@ -36,7 +36,7 @@ public class TarjanAlgorithm {
     private Deque<String> stack;
 
     public TarjanAlgorithm() {
-        cycles = new ArrayList<>();
+        sccsWithCycles = new ArrayList<>();
         executionTime = 0;
         index = 0;
         disc = new HashMap<>();
@@ -48,7 +48,7 @@ public class TarjanAlgorithm {
     /**
      * Führt Tarjan's Algorithmus aus
      */
-    public void execute(Graph graph) {   
+    public void execute(Graph graph) {
 
         // Laufzeit Start
         long startTime = System.nanoTime();
@@ -60,7 +60,7 @@ public class TarjanAlgorithm {
             onStack.put(node, false);
         }
 
-        // Tarjan für jeden unbesuchten Knoten 
+        // Tarjan für jeden unbesuchten Knoten
         for (String node : graph.getNodes()) {
             if (disc.get(node) == -1) {
                 tarjanVisit(node, graph);
@@ -94,12 +94,12 @@ public class TarjanAlgorithm {
 
                 // Lowlink aktualisieren
                 low.put(node,
-                    Math.min(low.get(node), low.get(neighbor)));
+                        Math.min(low.get(node), low.get(neighbor)));
 
             } else if (onStack.get(neighbor)) {
                 // Knoten ist auf Stack → Zyklus kann gibt es
                 low.put(node,
-                    Math.min(low.get(node), disc.get(neighbor)));
+                        Math.min(low.get(node), disc.get(neighbor)));
             }
         }
 
@@ -118,18 +118,18 @@ public class TarjanAlgorithm {
 
             // Nur Zyklen speichern (mehr als 1 Knoten)
             if (scc.size() > 1) {
-                cycles.add(scc);
+                sccsWithCycles.add(scc);
             }
         }
     }
 
-    // Getter 
-    public List<List<String>> getCycles() {
-        return cycles;
+    // Getter
+    public List<List<String>> getSccsWithCycles() {
+        return sccsWithCycles;
     }
 
     public boolean hasCycles() {
-        return !cycles.isEmpty();
+        return !sccsWithCycles.isEmpty();
     }
 
     public long getExecutionTime() {
@@ -138,16 +138,16 @@ public class TarjanAlgorithm {
 
     // Ergebnis ausgeben
     public void printResult() {
-        if (cycles.isEmpty()) {
+        if (sccsWithCycles.isEmpty()) {
             System.out.println("Kein Zyklus gefunden!");
         } else {
             System.out.println("Zyklen gefunden:");
-            for (int i = 0; i < cycles.size(); i++) {
+            for (int i = 0; i < sccsWithCycles.size(); i++) {
                 System.out.println(
-                    "Zyklus " + (i + 1) + ": " + cycles.get(i));
+                        "SCC mit Zyklus " + (i + 1) + ": " + sccsWithCycles.get(i));
             }
             System.out.println(
-                " Laufzeit: " + executionTime + " ns");
+                    " Laufzeit: " + executionTime + " ns");
         }
     }
 }

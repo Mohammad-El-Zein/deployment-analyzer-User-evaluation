@@ -7,7 +7,7 @@ import org.openjdk.jmh.runner.options.OptionsBuilder;
 import org.openjdk.jmh.results.format.ResultFormatType;
 
 /**
- * Fuehrt NUR den FullProgramBenchmark aus
+ * Führt den FullProgramBenchmark aus
  * (Gesamtlaufzeit: YAML lesen + Graph bauen +
  * Sortieren + Level-BFS, einmal mit Kahn,
  * einmal mit DFS).

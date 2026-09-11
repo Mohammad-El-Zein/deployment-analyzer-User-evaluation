@@ -6,9 +6,7 @@ import java.io.FileInputStream;
 import java.util.*;
 
 /**
- * Universeller Parser der Abhaengigkeiten UND
- * geschuetzte Abhaengigkeiten automatisch aus
- * verschiedenen YAML-Formaten abliest 
+ * Universeller Parser der Abhaengigkeiten und geschuetzten Kanten aus verschiedenen YAML-Formaten einliest.
  *
  * Unterstuetzt zwei Formate im selben Ordner
  * (auch gemischt):
@@ -26,11 +24,6 @@ import java.util.*;
  *        deployment-analyzer/depends-on: "database,redis"
  *        deployment-analyzer/protected-dependencies: "database"
  *
- * Baut daraus:
- * - eine Abhaengigkeitsstruktur (identisch zum
- *   Format von YamlParser.java)
- * - ein Set geschuetzter Kanten (identisch zum
- *   Format von YamlParser.getProtectedEdges())
  */
 public class UniversalYamlParser {
 

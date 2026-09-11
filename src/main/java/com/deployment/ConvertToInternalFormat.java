@@ -13,10 +13,6 @@ import java.util.Set;
  * automatisch in das interne YAML-Format des
  * Deployment Analyzers - inklusive geschuetzter
  * Abhaengigkeiten (protected_dependencies).
- *
- * Nutzung:
- *   java -cp target/classes com.deployment.ConvertToInternalFormat
- *        <input-ordner> <output-datei>
  */
 public class ConvertToInternalFormat {
 

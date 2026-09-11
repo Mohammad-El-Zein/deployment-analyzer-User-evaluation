@@ -14,14 +14,14 @@ public class FeedbackArcSet {
     private List<String> edgesToRemove;
     private long executionTime;
 
-    // Zyklen die NICHT aufgeloest werden konnten
+    // Zyklen die nicht aufgeloest werden konnten
     // weil alle beteiligten Kanten geschuetzt sind
-    private List<List<String>> unresolvableCycles;
+    private List<List<String>> unresolvableSccsWithCycles;
 
     public FeedbackArcSet() {
         edgesToRemove = new ArrayList<>();
         executionTime = 0;
-        unresolvableCycles = new ArrayList<>();
+        unresolvableSccsWithCycles = new ArrayList<>();
     }
 
     /**
@@ -29,8 +29,8 @@ public class FeedbackArcSet {
      * (Abwaertskompatibel zur alten Nutzung)
      */
     public void execute(Graph graph,
-                        List<List<String>> cycles) {
-        execute(graph, cycles, new HashSet<>());
+                        List<List<String>> sccsWithCycles) {
+        execute(graph, sccsWithCycles, new HashSet<>());
     }
 
     /**
@@ -41,10 +41,10 @@ public class FeedbackArcSet {
      * Falls ein Zyklus ausschliesslich aus
      * geschuetzten Kanten besteht, kann er nicht
      * aufgeloest werden - das wird in
-     * unresolvableCycles vermerkt.
+     * unresolvableSccsWithCycles vermerkt.
      */
     public void execute(Graph graph,
-                        List<List<String>> cycles,
+                        List<List<String>> sccsWithCycles,
                         Set<String> protectedEdges) {
 
         long startTime = System.nanoTime();
@@ -55,14 +55,14 @@ public class FeedbackArcSet {
                 new ArrayList<>(graph.getNeighbors(node)));
         }
 
-        List<List<String>> remainingCycles =
-            new ArrayList<>(cycles);
+        List<List<String>> remainingSccsWithCycles =
+            new ArrayList<>(sccsWithCycles);
 
-        while (!remainingCycles.isEmpty()) {
+        while (!remainingSccsWithCycles.isEmpty()) {
 
             Map<String, Integer> edgeCount = new HashMap<>();
 
-            for (List<String> scc : remainingCycles) {
+            for (List<String> scc : remainingSccsWithCycles) {
                 Set<String> sccNodes = new HashSet<>(scc);
 
                 for (String startNode : scc) {
@@ -99,16 +99,15 @@ public class FeedbackArcSet {
                 String to = parts[1];
                 adjCopy.get(from).remove(to);
 
-                remainingCycles.removeIf(cycle -> {
-                    Set<String> cycleNodes =
-                        new HashSet<>(cycle);
+                remainingSccsWithCycles.removeIf(scc -> {
+                    Set<String> sccNodes = new HashSet<>(scc);
 
-                    for (String node : cycle) {
+                    for (String node : scc) {
                         boolean hasEdgeInCycle = false;
                         for (String neighbor : adjCopy
                                 .getOrDefault(node,
                                     new ArrayList<>())) {
-                            if (cycleNodes.contains(
+                            if (sccNodes.contains(
                                     neighbor)) {
                                 hasEdgeInCycle = true;
                                 break;
@@ -123,7 +122,7 @@ public class FeedbackArcSet {
                 // Keine loeschbare Kante mehr gefunden!
                 // Alle verbleibenden Zyklen bestehen
                 // nur noch aus geschuetzten Kanten.
-                unresolvableCycles.addAll(remainingCycles);
+                unresolvableSccsWithCycles.addAll(remainingSccsWithCycles);
                 break;
             }
         }
@@ -203,17 +202,17 @@ public class FeedbackArcSet {
         return executionTime;
     }
 
-    public boolean hasUnresolvableCycles() {
-        return !unresolvableCycles.isEmpty();
+    public boolean hasUnresolvableSccsWithCycles() {
+        return !unresolvableSccsWithCycles.isEmpty();
     }
 
-    public List<List<String>> getUnresolvableCycles() {
-        return unresolvableCycles;
+    public List<List<String>> getUnresolvableSccsWithCycles() {
+        return unresolvableSccsWithCycles;
     }
 
     public void printResult() {
         if (edgesToRemove.isEmpty()
-                && unresolvableCycles.isEmpty()) {
+                && unresolvableSccsWithCycles.isEmpty()) {
             System.out.println(
                 " Keine Kanten zu entfernen!");
         } else {
@@ -228,7 +227,7 @@ public class FeedbackArcSet {
                 }
             }
 
-            if (unresolvableCycles.isEmpty()) {
+            if (unresolvableSccsWithCycles.isEmpty()) {
                 System.out.println(
                     " Nach Entfernung: Kein Zyklus mehr!");
             } else {
@@ -239,7 +238,7 @@ public class FeedbackArcSet {
                     " aufgeloest werden, da alle beteiligten");
                 System.out.println(
                     " Kanten als geschuetzt markiert sind:");
-                for (List<String> cycle : unresolvableCycles) {
+                for (List<String> cycle : unresolvableSccsWithCycles) {
                     System.out.println("   - " + cycle);
                 }
             }

@@ -15,17 +15,6 @@ import org.yaml.snakeyaml.Yaml;
  * Liest eine YAML Datei ein und extrahiert alle Services,
  * ihre Abhängigkeiten und optional geschützte
  * (nicht löschbare) Abhängigkeiten.
- *
- * Schritt 1: YamlParser liest YAML
- *          ↓
- *          gibt zurück:
- *          dependencies: Service -> Liste seiner Abhängigkeiten
- *          protectedEdges: Set von "dep -> service" Kanten
- *          die vom Feedback Arc Set NICHT entfernt
- *          werden duerfen
- *          ↓
- * Schritt 2: Graph nimmt dependencies
- * Schritt 3: FeedbackArcSet nutzt protectedEdges
  */
 public class YamlParser {
 

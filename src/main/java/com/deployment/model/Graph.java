@@ -29,19 +29,14 @@ public class Graph {
         adjacencyList = new HashMap<>();
         inDegree = new HashMap<>();
 
-        // Schritt 1: Alle Services als Knoten hinzufügen
-        //Für jeden Service:
-        //- füge ihn zu nodes hinzu
-        //- erstelle leere Nachfolger-Liste
-        //- setze In-Degree auf 0
+    
         for (String service : dependencies.keySet()) {
             nodes.add(service);
             adjacencyList.put(service, new ArrayList<>());
             inDegree.put(service, 0);
         }
 
-        // Schritt 2: Kanten aufbauen
-        // auth depends_on: [database] , bedeutet : database → auth-service
+    
         for (String service : dependencies.keySet()) {
             List<String> deps = dependencies.get(service);
 
@@ -57,21 +52,17 @@ public class Graph {
     }
 
     // Getter Methoden, damit wir in andere Klassen auf die Graph-Daten zugreifen können
-    //Gibt alle Services zurück
-    //z.B. ["database", "redis", "auth-service"]
     public List<String> getNodes() {
         return nodes;
     }
 
     // Gibt die ganze Adjazenzliste zurück
-    // z.B. {database → [auth], redis → [auth]}
     public Map<String, List<String>> getAdjacencyList() {
         return adjacencyList;
     }
 
     // Gibt Nachfolger eines bestimmten Services zurück
-    // Beispiel:
-    // graph.getNeighbors("database") → ["auth-service"]
+    
     public List<String> getNeighbors(String node) {
         return adjacencyList.getOrDefault(
             node, new ArrayList<>());
@@ -79,7 +70,6 @@ public class Graph {
 
    
      // Gibt die ganze In-Degree Map zurück
-     // z.B. {database→0, redis→0, auth→2}
     public Map<String, Integer> getInDegree() {
         return inDegree;
     }

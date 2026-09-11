@@ -9,14 +9,6 @@ import java.util.List;
  * Exportiert das komplette Analyse-Ergebnis
  * als maschinenlesbare JSON Datei.
  *
- * Enthaelt:
- * - Graph-Metadaten (Anzahl Services)
- * - ob ein Zyklus gefunden wurde
- * - gefundene Zyklen (falls vorhanden)
- * - vom Feedback Arc Set entfernte Kanten
- * - Deployment-Reihenfolge (Kahn)
- * - parallele Deployment-Gruppen (Level-BFS)
- *
  * Dieses Format kann von anderen Tools
  * (z.B. Deployment-Skripten, CI/CD Pipelines)
  * automatisch eingelesen werden.
@@ -42,7 +34,7 @@ public class JsonExporter {
             .append(hasCycle).append(",\n");
 
         // Gefundene Zyklen
-        json.append("  \"cyclesFound\": [\n");
+        json.append("  \"sccsWithCycles\": [\n");
         if (cycles != null) {
             for (int i = 0; i < cycles.size(); i++) {
                 json.append("    [")

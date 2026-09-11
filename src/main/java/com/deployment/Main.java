@@ -72,10 +72,10 @@ public class Main {
             printer.printTarjan(tarjan);
 
             FeedbackArcSet fas = new FeedbackArcSet();
-            fas.execute(graph, tarjan.getCycles(), protectedEdges);
+            fas.execute(graph, tarjan.getSccsWithCycles(), protectedEdges);
             printer.printFAS(fas);
 
-            if (fas.hasUnresolvableCycles()) {
+            if (fas.hasUnresolvableSccsWithCycles()) {
 
                 GraphvizExporter.export(
                     graph, protectedEdges, null,
@@ -84,7 +84,7 @@ public class Main {
 
                 JsonExporter.export(
                     "deployment_result.json",
-                    graph, true, tarjan.getCycles(),
+                    graph, true, tarjan.getSccsWithCycles(),
                     new ArrayList<>(),
                     new ArrayList<>(),
                     new ArrayList<>());
@@ -117,7 +117,7 @@ public class Main {
 
             JsonExporter.export(
                 "deployment_result.json",
-                graph, true, tarjan.getCycles(),
+                graph, true, tarjan.getSccsWithCycles(),
                 fas.getEdgesToRemove(),
                 new ArrayList<>(), // Kahn hat Zyklus, keine Reihenfolge
                 levelBFS.getLevels());

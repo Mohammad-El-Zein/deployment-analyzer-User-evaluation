@@ -1,0 +1,35 @@
+version: "3"
+services:
+  database:
+    depends_on: []
+  redis-cache:
+    depends_on: []
+  message-queue:
+    depends_on: []
+  auth-service:
+    depends_on:
+      - database
+      - redis-cache
+  product-service:
+    depends_on:
+      - database
+  notification-service:
+    depends_on:
+      - message-queue
+  user-service:
+    depends_on:
+      - database
+      - auth-service
+  order-service:
+    depends_on:
+      - product-service
+      - user-service
+      - message-queue
+  payment-service:
+    depends_on:
+      - order-service
+  api-gateway:
+    depends_on:
+      - auth-service
+      - order-service
+      - notification-service

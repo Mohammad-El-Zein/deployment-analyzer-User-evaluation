@@ -43,9 +43,9 @@ public class LevelBFS {
      */
     public void execute(Graph graph) {
         executeWithAdjacency(
-            graph, 
-            graph.getAdjacencyList()
-        );
+                graph, 
+                graph.getAdjacencyList()
+            );
     }
 
     /**
@@ -53,8 +53,8 @@ public class LevelBFS {
      * Wird nach Feedback Arc Set genutzt
      */
     public void executeWithAdjacency(
-        Graph graph,
-        Map<String, List<String>> adjacencyList) {
+            Graph graph,
+            Map<String, List<String>> adjacencyList) {
 
         // Laufzeit Start
         long startTime = System.nanoTime();
@@ -71,7 +71,7 @@ public class LevelBFS {
             for (String neighbor : adjacencyList
                     .getOrDefault(node, new ArrayList<>())) {
                 inDegree.put(neighbor,
-                    inDegree.get(neighbor) + 1);
+                        inDegree.get(neighbor) + 1);
             }
         }
 
@@ -97,10 +97,10 @@ public class LevelBFS {
 
                 // Nachfolger verarbeiten
                 for (String neighbor : adjacencyList
-                        .getOrDefault(current, 
-                            new ArrayList<>())) {
+                        .getOrDefault(current,
+                                new ArrayList<>())) {
                     inDegree.put(neighbor,
-                        inDegree.get(neighbor) - 1);
+                            inDegree.get(neighbor) - 1);
 
                     if (inDegree.get(neighbor) == 0) {
                         queue.add(neighbor);
@@ -156,32 +156,32 @@ public class LevelBFS {
     // Ergebnis ausgeben
     public void printResult() {
         System.out.println(
-            " Parallele Deployment-Gruppen (Level-BFS):");
+                " Parallele Deployment-Gruppen (Level-BFS):");
 
         for (int i = 0; i < levels.size(); i++) {
             System.out.println(
-                "Level " + i + " (parallel starten): " 
-                + levels.get(i));
+                    "Level " + i + " (parallel starten): "
+                            + levels.get(i));
         }
 
         System.out.println();
         System.out.println(
-            " Zeitvergleich:");
+                " Zeitvergleich:");
         System.out.println(
-            "Sequenziell: " + sequentialTime 
-            + " Zeiteinheiten");
+                "Sequenziell: " + sequentialTime
+                        + " Zeiteinheiten");
         System.out.println(
-            "Parallel:    " + parallelTime 
-            + " Zeiteinheiten");
+                "Parallel:    " + parallelTime
+                        + " Zeiteinheiten");
         System.out.println(
-            "Ersparnis:   " 
-            + (sequentialTime - parallelTime) 
-            + " Zeiteinheiten ("
-            + Math.round(
-                (1.0 - (double) parallelTime / sequentialTime) 
-                * 100)
-            + "%)");
+                "Ersparnis:   "
+                        + (sequentialTime - parallelTime)
+                        + " Zeiteinheiten ("
+                        + Math.round(
+                                (1.0 - (double) parallelTime / sequentialTime)
+                                        * 100)
+                        + "%)");
         System.out.println(
-            "   Laufzeit: " + executionTime + " ns");
+                "   Laufzeit: " + executionTime + " ns");
     }
 }

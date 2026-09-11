@@ -36,9 +36,6 @@ public class CsvResultReader {
      * Sucht den Eintrag fuer eine bestimmte Kategorie
      * ("algorithm" oder "fullprogram") und ein Label
      * (z.B. "large").
-     *
-     * Gibt null zurueck wenn kein Eintrag existiert
-     * oder die Datei nicht gefunden wird.
      */
     public static JmhResult findResult(
             String csvFilePath,

@@ -283,11 +283,11 @@ public class ResultPrinter {
         } else {
             System.out.println(
                 " [FEHLER] Zyklen gefunden: "
-                + tarjan.getCycles().size());
+                + tarjan.getSccsWithCycles().size());
             System.out.println(THIN_LINE);
             System.out.println();
 
-            List<List<String>> cycles = tarjan.getCycles();
+            List<List<String>> cycles = tarjan.getSccsWithCycles();
             for (int i = 0; i < cycles.size(); i++) {
                 System.out.println(
                     " Zyklus " + (i + 1) + ": "
@@ -309,7 +309,7 @@ public class ResultPrinter {
     System.out.println();
 
     if (fas.getEdgesToRemove().isEmpty()
-            && !fas.hasUnresolvableCycles()) {
+            && !fas.hasUnresolvableSccsWithCycles()) {
         System.out.println(
             " [OK] Keine Kanten zu entfernen!");
     } else {
@@ -325,7 +325,7 @@ public class ResultPrinter {
             System.out.println();
         }
 
-        if (!fas.hasUnresolvableCycles()) {
+        if (!fas.hasUnresolvableSccsWithCycles()) {
             System.out.println(
                 " [OK] Nach Entfernung: Kein Zyklus mehr!");
         } else {
@@ -339,7 +339,7 @@ public class ResultPrinter {
                 " markiert:");
             System.out.println();
             for (List<String> cycle :
-                    fas.getUnresolvableCycles()) {
+                    fas.getUnresolvableSccsWithCycles()) {
                 System.out.println("   - " + cycle);
             }
             System.out.println();
