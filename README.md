@@ -93,10 +93,10 @@ UniversalYamlParser                |
 | Kahn's Algorithmus | Topologische Sortierung (BFS) | O(V+E) |
 | DFS Topologische Sortierung | Topologische Sortierung (DFS) | O(V+E) |
 | Tarjan's Algorithmus | Zyklenerkennung (SCC) | O(V+E) |
-| Feedback Arc Set | Zyklusauflösung (Greedy, respektiert geschützte Kanten) | O(V·E) |
+| Feedback Arc Set | Zyklusauflösung (Greedy, respektiert geschützte Kanten) | Exponentiell (Worst Case), praktisch klein durch SCC-Eingrenzung |
 | Level-BFS | Parallelisierungsoptimierung | O(V+E) |
 
-**Warum Tarjan zusätzlich zu Kahn/DFS?** Kahn und DFS erkennen lediglich *ob* ein Zyklus existiert. Tarjan identifiziert präzise *welche* Knoten eine Strongly Connected Component bilden – diese Information ist zwingend notwendig, damit Feedback Arc Set die minimale Menge an Kanten zur Auflösung berechnen kann.
+**Warum Tarjan zusätzlich zu Kahn/DFS?** Kahn und DFS erkennen lediglich *ob* ein Zyklus existiert. Tarjan identifiziert präzise *welche* Knoten eine Strongly Connected Component bilden – diese Information ist zwingend notwendig, damit Feedback Arc Set gezielt innerhalb der betroffenen Komponente nach entfernbaren Kanten suchen kann.
 
 ---
 
@@ -114,7 +114,6 @@ py -m pip install -r requirements.txt
 ```
 
 ---
-
 ## Installation
 
 ```bash
@@ -139,7 +138,7 @@ Eine eigene YAML-Datei im internen Format erstellen (siehe Abschnitt "YAML Forma
 
 **Option B – Automatisch aus Docker Compose oder Kubernetes ableiten:**
 
-Wenn bereits Docker-Compose- oder Kubernetes-Dateien existieren(muss das gibt in jedes echtes deployment), muss nichts manuell geschrieben werden. Es reicht, die vorhandenen Dateien in den passenden Ordner zu legen:
+Wenn bereits Docker-Compose- oder Kubernetes-Dateien existieren, muss nichts manuell geschrieben werden. Es reicht, die vorhandenen Dateien in den passenden Ordner zu legen:
 
 - Docker Compose Dateien → `src/main/resources/examples/docker-manifests/`
 - Kubernetes Deployment-Dateien → `src/main/resources/examples/kubernetes-manifests/`
@@ -159,7 +158,7 @@ api-gateway:
     image: api-gateway:latest
     depends_on:
       - auth-service
-    labels:  // nur dieses Zeile
+    labels:  // nur diese Zeile
       - "deployment-analyzer.protected-dependencies=auth-service"
 ```
 
@@ -264,7 +263,7 @@ Verfügbare Standarddateien (mit hinterlegten JMH-Referenzwerten):
 // xxlarge.yaml   →  500 Services
 // xxxlarge.yaml  → 1000 Services
 // xxxxlarge.yaml → 2000 Services
-// cycle.yaml               → 3 Services mit Zyklus
+// cycle.yaml               → 5 Services mit Zyklus
 // cycle-protected.yaml      → Zyklus mit teilweise geschützten Kanten
 // cycle-unresolvable.yaml   → Zyklus, der wegen geschützter Kanten nicht lösbar ist
 ```
@@ -350,7 +349,6 @@ spec:
 ```
 
 Jeder Service liegt dabei üblicherweise in einer eigenen Datei (Kubernetes-Konvention) – der `UniversalYamlParser` liest alle Dateien eines Ordners automatisch ein und baut daraus den vollständigen Graphen.
-
 ### Erkennungslogik
 
 Der `UniversalYamlParser` erkennt das Format jeder Datei automatisch:
@@ -446,7 +444,6 @@ Lese YAML: src/main/resources/examples/simple.yaml
 ```
 
 ---
-
 ## Beispiel Output – Zyklus mit geschützten Kanten (unlösbar)
 
 ```
@@ -519,7 +516,7 @@ Jeder Lauf erzeugt `deployment_result.json` mit folgender Struktur:
 {
   "services": 50,
   "hasCycle": false,
-  "cyclesFound": [],
+  "sccsWithCycles": [],
   "removedEdges": [],
   "deploymentOrder": ["database", "redis", "auth-service", "..."],
   "parallelGroups": {
@@ -531,9 +528,6 @@ Jeder Lauf erzeugt `deployment_result.json` mit folgender Struktur:
 ```
 
 Dieses Format kann von externen Tools (z. B. Deployment-Skripten oder CI/CD-Pipelines) automatisch eingelesen werden, um Services in korrekter, teilweise paralleler Reihenfolge auszurollen.
-
----
-
 ## Wissenschaftliche Evaluation (JMH)
 
 Die Laufzeitmessung erfolgt mit dem **Java Microbenchmark Harness (JMH)**, dem Standard-Framework für Microbenchmarking in Java. JMH führt automatisches Warmup durch, um JIT-Compiler-Effekte zu eliminieren, und nutzt mehrere unabhängige JVM-Forks zur Erfassung der Varianz. Jede Konfiguration wird über 10 Iterationen mit vorherigem 5-fachem Warmup und 2 Forks gemessen – insgesamt 20 Einzelmessungen pro Datenpunkt.
@@ -587,20 +581,23 @@ deployment-analyzer/
 │   │   ├── Main.java
 │   │   └── ResultPrinter.java
 │   └── resources/examples/
-│       ├── simple.yaml                     (5 Services)
-│       ├── medium.yaml                     (20 Services)
-│       ├── large.yaml                      (50 Services)
-│       ├── xlarge.yaml                     (100 Services)
-│       ├── xxlarge.yaml                    (500 Services)
-│       ├── xxxlarge.yaml                   (1000 Services)
-│       ├── xxxxlarge.yaml                  (2000 Services)
-│       ├── cycle.yaml                      (Zyklus, frei lösbar)
+│       ├── simple.yaml                     (5 Services, eigenständig definiert)
+│       ├── showcase-10-services.yaml       (10 Services, eigenständig definiert)
+│       ├── medium.yaml                     (20 Services, eigenständig definiert)
+│       ├── large.yaml                      (50 Services, generiert)
+│       ├── xlarge.yaml                     (100 Services, generiert)
+│       ├── xxlarge.yaml                    (500 Services, generiert)
+│       ├── xxxlarge.yaml                   (1000 Services, generiert)
+│       ├── xxxxlarge.yaml                  (2000 Services, generiert)
+│       ├── cycle.yaml                      (5 Services, Zyklus, frei lösbar)
 │       ├── cycle-protected.yaml            (Zyklus, teilweise geschützt)
 │       ├── cycle-unresolvable.yaml         (Zyklus, vollständig geschützt)
 │       ├── docker-manifests/               (Docker Compose Testdaten)
 │       └── kubernetes-manifests/           (Kubernetes Testdaten)
 ├── create_summary.py
 ├── create_boxplots.py
+├── correctness_checker.py
+├── cycle_resolution_checker.py
 ├── run_demo.bat
 ├── run_algorithm_benchmark.bat
 ├── run_full_program_benchmark.bat
@@ -608,6 +605,7 @@ deployment-analyzer/
 ├── convert_docker.bat
 ├── convert_kubernetes.bat
 ├── requirements.txt
+├── README.md
 └── pom.xml
 ```
 
