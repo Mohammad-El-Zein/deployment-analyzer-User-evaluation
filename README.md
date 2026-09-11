@@ -19,7 +19,7 @@
 
 ## Beschreibung
 
-Dieses Tool analysiert Microservice-Abhängigkeiten automatisch und berechnet die optimale Deployment-Reihenfolge mithilfe von Graphalgorithmen. Der Benutzer definiert die Abhängigkeiten zwischen den Services entweder direkt in einer YAML-Datei oder – für den Praxiseinsatz – automatisch ableitbar aus bereits bestehenden Docker-Compose- oder Kubernetes-Manifesten. Die korrekte Reihenfolge, Zyklenerkennung und Parallelisierungsoptimierung übernimmt das System vollautomatisch.
+Dieses Tool analysiert Microservice-Abhängigkeiten automatisch und berechnet die optimierte Deployment-Reihenfolge mithilfe von Graphalgorithmen. Der Benutzer definiert die Abhängigkeiten zwischen den Services entweder direkt in einer YAML-Datei oder – für den Praxiseinsatz – automatisch ableitbar aus bereits bestehenden Docker-Compose- oder Kubernetes-Manifesten. Die korrekte Reihenfolge, Zyklenerkennung und Parallelisierungsoptimierung übernimmt das System vollautomatisch.
 
 ### Motivation
 
@@ -93,7 +93,7 @@ UniversalYamlParser                |
 | Kahn's Algorithmus | Topologische Sortierung (BFS) | O(V+E) |
 | DFS Topologische Sortierung | Topologische Sortierung (DFS) | O(V+E) |
 | Tarjan's Algorithmus | Zyklenerkennung (SCC) | O(V+E) |
-| Feedback Arc Set | Zyklusauflösung (Greedy, respektiert geschützte Kanten) | Exponentiell (Worst Case), praktisch klein durch SCC-Eingrenzung |
+| Feedback Arc Set | Zyklusauflösung (Greedy, respektiert geschützte Kanten) | Exponentiell im Worst Case (Zyklen-Enumeration innerhalb einer SCC), praktisch sehr effizient durch Tarjan-Eingrenzung und dünn besetzte Microservice-Graphen“ |
 | Level-BFS | Parallelisierungsoptimierung | O(V+E) |
 
 **Warum Tarjan zusätzlich zu Kahn/DFS?** Kahn und DFS erkennen lediglich *ob* ein Zyklus existiert. Tarjan identifiziert präzise *welche* Knoten eine Strongly Connected Component bilden – diese Information ist zwingend notwendig, damit Feedback Arc Set gezielt innerhalb der betroffenen Komponente nach entfernbaren Kanten suchen kann.
